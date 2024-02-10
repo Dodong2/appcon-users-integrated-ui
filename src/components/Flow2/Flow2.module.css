@@ -1,0 +1,93 @@
+:root {
+    --white: rgb(255, 255, 255);
+    --font-path: url(../fonts/);
+}
+
+  
+  /* Font */
+  @font-face {
+    font-family: 'Poppins';
+    src: var(--font-path) url('Poppins-Light.ttf');
+  }
+  
+
+
+/*container*/
+.container {
+    height:100vh;
+    background:  url(../images/bgImg2.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*LOGO*/
+.container .center-contents {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 106px;
+    height: 106px;
+    transform: translate(-50%, -100%);
+}
+/*TEXTS*/
+.container .txt1 {
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 20px;
+    color: var(--white);
+    font-style: normal;
+    line-height: normal;
+}
+.container .txt2 {
+    position: fixed;
+    width: 230px;
+    top: 100%;
+    left: 50%; 
+    transform: translate(-50%, 40%);
+}
+.container .txt2 .txt2-child {
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 10px;
+    color: var(--white);
+    font-style: normal;
+    line-height: normal;
+    padding: 1rem;
+}
+/*Button*/
+.container .btn {
+    position: fixed;
+    top: 100%;
+    left: 50%; 
+    transform: translate(-50%, -120%);
+}
+
+.container .btn button{
+    width: 269px;
+    font-family: 'Poppins';
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+    margin: 20px;
+    text-align: center;
+    padding: 14px 10px;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(to right, #0038FF, #00D1FF, #0038FF, #00D1FF);
+    background-size: 300% 100%;
+    transition: background-position 0.4s ease-in-out, box-shadow 0.4s ease-in-out, color 0.4s ease-in-out;
+    box-shadow: 0 4px 15px 0 rgba(0, 56, 255, 0.75);
+  }
+.container button:hover{
+    background-position: 100% 0;
+    box-shadow: 0 8px 20px 0 rgba(0, 56, 255, 0.75);
+    color: white;
+    
+  }
+ button:focus{
+    outline: none;
+  }
+
