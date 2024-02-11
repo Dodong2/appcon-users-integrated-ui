@@ -2,4 +2,57 @@
     margin: 0;
     padding: 0;
     outline: none;
+    font-family: 'Poppins';
+    -webkit-tap-highlight-color: transparent;
 }
+
+:root {
+    --font-path: url(../src/components/fonts/Poppins-Light.ttf);
+}
+
+  
+  /* Font */
+  @font-face {
+    font-family: 'Poppins';
+    src: var(--font-path) url('Poppins-Light.ttf');
+  }
+
+  body {
+      height:100vh;
+      background: 
+      url(../src/components/images/mainBg.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+  }
+
+  .container {
+    position: relative;
+  }
+/* para may transition yung first and second page*/
+  .first-page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0s ease-out;
+  }
+
+  .second-page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 2s ease;
+  }
+/* it check kung visible then mag opacity 1*/
+  .visibile {
+    opacity: 1;
+  }
+/* it check kung hidden then mag opacity 0*/
+  .hidden {
+    opacity: 0;
+  }

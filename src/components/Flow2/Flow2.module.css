@@ -1,6 +1,6 @@
 :root {
     --white: rgb(255, 255, 255);
-    --font-path: url(../fonts/);
+    --font-path: url(../fonts/Poppins-Light.ttf);
 }
 
   
@@ -13,14 +13,7 @@
 
 
 /*container*/
-.container {
-    height:100vh;
-    background:  url(../images/bgImg2.webp);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-}
+
 
 /*LOGO*/
 .container .center-contents {
@@ -29,7 +22,7 @@
     left: 50%;
     width: 106px;
     height: 106px;
-    transform: translate(-50%, -100%);
+    transform: translate(-50%, -150%);
 }
 /*TEXTS*/
 .container .txt1 {
@@ -45,7 +38,7 @@
     width: 230px;
     top: 100%;
     left: 50%; 
-    transform: translate(-50%, 40%);
+    transform: translate(-50%, 60%);
 }
 .container .txt2 .txt2-child {
     text-align: center;
@@ -79,15 +72,31 @@
     background: linear-gradient(to right, #0038FF, #00D1FF, #0038FF, #00D1FF);
     background-size: 300% 100%;
     transition: background-position 0.4s ease-in-out, box-shadow 0.4s ease-in-out, color 0.4s ease-in-out;
-    box-shadow: 0 4px 15px 0 rgba(0, 56, 255, 0.75);
+    animation: shadow-color 5s linear infinite;
   }
 .container button:hover{
     background-position: 100% 0;
-    box-shadow: 0 8px 20px 0 rgba(0, 56, 255, 0.75);
+    box-shadow: 0 4px 15px 0 rgba(0, 56, 255, 0.75);
     color: white;
     
   }
  button:focus{
     outline: none;
   }
+
+  /*Animation for box-shadow of button*/
+  @keyframes shadow-color {
+    0% {
+      box-shadow: 0 4px 15px 0 rgba(0, 56, 255, 0);
+    }
+    50% {
+      -webkit-box-shadow:0px 0px 15px 0px rgba(46,189,255,0.9);
+-moz-box-shadow: 0px 0px 15px 0px rgba(46,189,255,0.9);
+box-shadow: 0px 0px 25px 0px rgba(46,189,255,0.9);
+    }
+    100% {
+      box-shadow: 0 4px 15px 0 rgba(0, 56, 255, 0);
+    }
+}
+
 

@@ -14,7 +14,7 @@ const Flow1 = () => {
             </article>
                 <div className={style.txt2}>
                     <article className={style['txt2-child']}>
-                        <p>is a compassionate and dedicated Internal Medicine Physician with a deep</p>
+                        <p>Health Alert Network</p>
                     </article>
                 </div>
       </div>
