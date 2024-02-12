@@ -5,6 +5,7 @@ const Flow1 = () => {
     <>
     {/*container*/}
     <div className={style.container}>
+    <div className={style.card}>
     {/*LOGO*/}
       <div className={style['center-contents']}>
         <img src={logo} alt='logo'/>
@@ -21,6 +22,7 @@ const Flow1 = () => {
       {/*Button*/}
         <div className={style.btn}>
         <button>Find Nearest Hospital</button>
+        </div>
         </div>
     </div>
     </>

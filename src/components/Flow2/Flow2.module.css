@@ -13,8 +13,26 @@
 
 
 /*container*/
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Card */
+.container .card {
+  position: fixed;
+  justify-content: space-between;
 
-
+  border-radius: 5px;
+  background: url(../images/bgImg1.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid red;
+  width: 490px;
+  height: 100vh;
+  max-height: 570px;
+}
 /*LOGO*/
 .container .center-contents {
     position: fixed;
