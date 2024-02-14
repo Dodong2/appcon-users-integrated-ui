@@ -9,30 +9,15 @@
     font-family: 'Poppins';
     src: var(--font-path) url('Poppins-Light.ttf');
   }
-  
-
 
 /*container*/
 .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+ display: flex;
+ justify-content: center;
+ align-items: center;
 }
 /* Card */
-.container .card {
-  position: fixed;
-  justify-content: space-between;
 
-  border-radius: 5px;
-  background: url(../images/bgImg1.webp);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border: 1px solid red;
-  width: 490px;
-  height: 100vh;
-  max-height: 570px;
-}
 /*LOGO*/
 .container .center-contents {
     position: fixed;
@@ -43,13 +28,15 @@
     transform: translate(-50%, -150%);
 }
 /*TEXTS*/
-.container .txt1 {
+.container .txt1 h1 {
     text-align: center;
     font-family: 'Poppins';
-    font-size: 20px;
+    font-size: 50px;
+    font-weight: 600;
     color: var(--white);
     font-style: normal;
     line-height: normal;
+    transform: translate(-15%, -10%);
 }
 .container .txt2 {
     position: fixed;
@@ -118,3 +105,20 @@ box-shadow: 0px 0px 25px 0px rgba(46,189,255,0.9);
 }
 
 
+
+/* responsive sections */
+
+/* for smallest screen */
+@media (min-width: 340px) {}
+/* for medium screen */
+@media (min-width: 768px) {}
+/* for large screen */
+@media (min-width: 1024px) {
+  .btn {
+    margin-top: -100px; /* Adjust the margin top as needed */
+  }
+}
+/* for larger screen */
+@media (min-width: 1920px) {
+
+}
