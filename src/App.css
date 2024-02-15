@@ -1,58 +1,162 @@
+/* General */
 * {
-    margin: 0;
-    padding: 0;
-    outline: none;
-    font-family: 'Poppins';
-    -webkit-tap-highlight-color: transparent;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family: 'Poppins';
+  -webkit-tap-highlight-color: transparent;
 }
 
-:root {
-    --font-path: url(../src/components/fonts/Poppins-Light.ttf);
+:root{
+  --white: #FFFFFF;
 }
 
-  
-  /* Font */
-  @font-face {
-    font-family: 'Poppins';
-    src: var(--font-path) url('Poppins-Light.ttf');
-  }
+/* Font */
+@font-face {
+  font-family: 'Poppins';
+  src: url('./components/fonts/Poppins-Light.ttf');
+}
+@font-face {
+  font-family: 'Poppins-Bold';
+  src: url('./components/fonts/Poppins-Bold.ttf');
+}
 
-  body {
-      height:100vh;
-      background: 
-      url(../src/components/images/mainBg.svg);
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      background-attachment: fixed;
-  }
+body {
+  height:100vh;
+  background: 
+  url(./components/images/mainBg.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
 
-  .container {
-    position: relative;
+.container{
+  width: 1140px;
+  margin: 0 auto;
+}
+.container .center-contents{
+  width: fit-content;
+  margin: 0 auto;
+  padding-top: 120px;
+}
+.container .center-contents img,
+.container .center-contents h1,
+.container .center-contents p{
+  display: block;
+  margin: auto;
+  text-align: center;
+  color: var(--white);
+  font-size: 1em;
+}
+.container .center-contents h1 {
+  text-align: center;
+  font-family: Poppins-Bold;
+  font-size: 2em;
+  font-weight: bold;
+  font-style: normal;
+  line-height: normal;
+  margin-top: 12px;
+}
+
+/*Button*/
+.container .btn {
+  position: fixed;
+  bottom: 0;
+  left: 50%; 
+  transform: translate(-50%);
+  z-index: 1; /* Updated z-index value */
+}
+
+.container .btn button {
+  width: 269px;
+  font-family: 'Poppins';
+  font-size: 15px;
+  color: white;
+  cursor: pointer;
+  margin: 20px;
+  text-align: center;
+  padding: 14px 10px;
+  gap: 10px;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(to right, #0038FF, #00D1FF, #0038FF, #00D1FF);
+  background-size: 300% 100%;
+  transition: background-position 0.4s ease-in-out, box-shadow 0.4s ease-in-out, color 0.4s ease-in-out;
+  animation: shadow-color 5s linear infinite;
+}
+
+.container .btn button:hover {
+  background-position: 100% 0;
+  box-shadow: 0 4px 15px rgba(0, 56, 255, 0.75);
+  color: white;
+}
+
+button:focus {
+  outline: none;
+}
+
+/* Animation for box-shadow of button */
+@keyframes shadow-color {
+  0% {
+    box-shadow: 0 4px 15px 0 rgba(0, 56, 255, 0);
   }
-/* para may transition yung first and second page*/
-  .first-page {
-    position: absolute;
-    top: 0;
-    left: 0;
+  50% {
+    box-shadow: 0 0 25px 0 rgba(46, 189, 255, 0.9);
+  }
+  100% {
+    box-shadow: 0 4px 15px 0 rgba(0, 56, 255, 0);
+  }
+}
+
+
+/* Loading Screen */
+.loading-container {
+  position: fixed;
+  height:100vh;
+  width: 100%;
+  background:  url(./components/images/bgImg1.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 100;
+}
+
+/*LOGO*/
+.loading-container .logo {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 106px;
+  height: 106px;
+  transform: translateX(-50%) translateY(-50%);
+}
+.visibile {
+  opacity: 1;
+  transition: opacity 1s ease-out;
+}
+.hidden {
+  opacity: 0;
+  z-index: -100;
+  transition: opacity 1s ease-out;
+}
+
+
+/*Phone*/
+@media only screen and (max-width: 767px) {
+  .container{
+    width: calc(100% - 40px);
+    padding: 20px;
+  }
+  .container .center-contents h1 {
+    font-size: 1.8em;
+  }
+}
+
+/*Tablet*/
+@media only screen and (min-width: 768px) and (max-width:991px) {
+  .container{
     width: 100%;
-    height: 100%;
-    transition: opacity 1s ease-out;
   }
-
-  .second-page {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transition: opacity 4s ease;
-  }
-/* it check kung visible then mag opacity 1*/
-  .visibile {
-    opacity: 1;
-  }
-/* it check kung hidden then mag opacity 0*/
-  .hidden {
-    opacity: 0;
-  }
+}
