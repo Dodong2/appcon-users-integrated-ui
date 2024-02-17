@@ -1,5 +1,10 @@
 import { useEffect } from 'react';
 import Load from './Loading';
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap/dist/js/bootstrap'
+import Host from '../images/Host.png'
+import mem1 from '../images/mem1.jpg'
+import bruh from '../images/bruh.jpg'
 
 const Hospitals = () => {
   useEffect(() => {
@@ -11,11 +16,10 @@ const Hospitals = () => {
   const longitude = searchParams.get('long');
 
   return (
-    <div>
-      <Load />
-      <div>Latitude: {latitude}</div>
-      <div>Longitude: {longitude}</div>
-    </div>
+    <>
+    <Load />
+    
+    </>
   );
 };
 

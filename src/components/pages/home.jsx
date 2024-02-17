@@ -42,9 +42,11 @@ const Home = () => {
         <div className='container'>
          {/* if modal is open magpapakita to once na ma-click si button na find nearest.....*/}
           <div className="center-contents">
+          <div>
             <img src={location} alt='logo' />
             <h1>Access your location</h1>
             <p>We need your permission to access your location.</p>
+            </div>
           </div>
           <div className="btn">
             <button 
@@ -60,11 +62,16 @@ const Home = () => {
         <div className='container'>
          {/* unang makikita after ng loading */}
           <div className="center-contents">
+          <div>
             <img src={logo} alt='logo' />
             <h1>HEAN</h1>
             <p>Health Alert Network</p>
+            </div>
+            
           </div>
           <div className="btn">
+              <p>Your guide to the nearest hospital that could cater your emergency needs.</p>
+              <p>Just click the button below 💙</p>
             <button onClick={tggleModal} type="button">Find Nearest Hospital</button>
           </div>
         </div>
