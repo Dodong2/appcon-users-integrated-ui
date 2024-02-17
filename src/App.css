@@ -30,7 +30,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
 }
-
+/*Container*/
 .container{
   width: 1140px;
   margin: 0 auto;

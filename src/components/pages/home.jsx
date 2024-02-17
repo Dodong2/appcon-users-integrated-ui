@@ -5,18 +5,22 @@ import logo from '../images/Temologo.svg';
 import location from '../images/location.svg';
 
 const Home = () => {
+  //useState Sections
+  const [isOpenModal, setOpenModal] = useState(false);
+  const [isGettingLocation, setGettingLocation] = useState(false);
+
+//for title
   const navigate = useNavigate();
   useEffect(() => {
     document.title = 'HEAN';
   }, []);
 
-  const [isOpenModal, setOpenModal] = useState(false);
-  const [isGettingLocation, setGettingLocation] = useState(false);
-
+//for Show allow access
   const tggleModal = () => {
     setOpenModal(!isOpenModal);
   };
-
+  
+//for allow location
   const allowLocation = () => {
     setGettingLocation(true);
     setTimeout(() => {
@@ -36,6 +40,7 @@ const Home = () => {
       <Load />
       {isOpenModal ? (
         <div className='container'>
+         {/* if modal is open magpapakita to once na ma-click si button na find nearest.....*/}
           <div className="center-contents">
             <img src={location} alt='logo' />
             <h1>Access your location</h1>
@@ -53,6 +58,7 @@ const Home = () => {
         </div>
       ) : (
         <div className='container'>
+         {/* unang makikita after ng loading */}
           <div className="center-contents">
             <img src={logo} alt='logo' />
             <h1>HEAN</h1>

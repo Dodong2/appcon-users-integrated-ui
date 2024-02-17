@@ -16,6 +16,7 @@ function App() {
 
   return (
     <>
+{/* Loading Page */}
       <div className={`loading-container ${isLoading ? 'visible' : 'hidden'}`}>
         <div className={`first-page ${isLoading ? 'visible' : 'hidden'}`}>
           <div className="loading-logo">
