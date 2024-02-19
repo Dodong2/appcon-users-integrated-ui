@@ -7,8 +7,9 @@
   -webkit-tap-highlight-color: transparent;
 }
 
-:root{
+:root {
   --white: #FFFFFF;
+  --bg: rgb(25, 25, 162);
 }
 
 /* Font */
@@ -16,22 +17,30 @@
   font-family: 'Poppins';
   src: url('./components/fonts/Poppins-Light.ttf');
 }
+
 @font-face {
   font-family: 'Poppins-Bold';
   src: url('./components/fonts/Poppins-Bold.ttf');
 }
 
+body,
+html {
+  overflow: hidden;
+}
+
 body {
-  height:100vh;
-  background: 
-  url(./components/images/mainBg.svg);
+  height: 100vh;
+  width: 100%;
+  background:
+    url(./components/images/mainBg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
 }
+
 /*Container*/
-.container{
+.container {
   width: 1140px;
   margin: 0 auto;
 }
@@ -42,13 +51,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height:70vh;
+  height: 70vh;
+  margin-top: 0%;
 }
-
 
 .container .center-contents img,
 .container .center-contents h1,
-.container .center-contents p, 
+.container .center-contents p,
 .container .btn p,
 .card-parent .card-child .center-contents {
   display: block;
@@ -57,6 +66,7 @@ body {
   color: var(--white);
   font-size: 1em;
 }
+
 .container .center-contents h1 {
   text-align: center;
   font-family: Poppins-Bold;
@@ -64,16 +74,34 @@ body {
   font-weight: bold;
   font-style: normal;
   line-height: normal;
-  margin-top: 12px;
+  margin-top: -20px;
+}
+
+/*layer for logo */
+.layer-stack {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  /* I-set ang height base sa iyong pangangailangan */
+  position: relative;
+  z-index: -100;
+}
+
+.layer-stack img {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: -200px;
 }
 
 /*Button*/
 .container .btn {
   position: fixed;
-  bottom: 0;
-  left: 50%; 
+  left: 50%;
   transform: translate(-50%);
-  z-index: 1; /* Updated z-index value */
+  z-index: 1;
 }
 
 .container .btn button {
@@ -109,9 +137,11 @@ button:focus {
   0% {
     box-shadow: 0 4px 15px 0 rgba(0, 56, 255, 0);
   }
+
   50% {
     box-shadow: 0 0 25px 0 rgba(46, 189, 255, 0.9);
   }
+
   100% {
     box-shadow: 0 4px 15px 0 rgba(0, 56, 255, 0);
   }
@@ -121,9 +151,9 @@ button:focus {
 /* Loading Screen */
 .loading-container {
   position: fixed;
-  height:100vh;
+  height: 100vh;
   width: 100%;
-  background:  url(./components/images/bgImg1.webp);
+  background: url(./components/images/bgImg1.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -134,16 +164,18 @@ button:focus {
 /*LOGO*/
 .loading-container .logo {
   position: fixed;
-  top: 50%;
+  top: 83%;
   left: 50%;
   width: 106px;
   height: 106px;
   transform: translateX(-50%) translateY(-50%);
 }
+
 .visibile {
   opacity: 1;
   transition: opacity 1s ease-out;
 }
+
 .hidden {
   opacity: 0;
   z-index: -100;
@@ -177,39 +209,44 @@ button:focus {
   height: 150px;
   margin-top: 20px;
 }
+
 .carousel-item {
   border: 1px solid yellow;
-  
+
 }
-/* .container .btnss {
-  position: fixed;
-} */
+
 
 /*Phone*/
 @media only screen and (max-width: 767px) {
-  .container{
+  .container {
     width: calc(100% - 40px);
     padding: 20px;
   }
+
   .container .center-contents {
-   display: block;
-   padding-top: 20px;
+    display: block;
+    padding-top: 20px;
+    margin-top: -5%;
   }
+
   .container .center-contents h1 {
     font-size: 1.8em;
+  }
+
+  .btn div>p:nth-child(1),
+  .btn div>p:nth-child(2) {
+    font-size: 10px;
+  }
+
+  .loading-container .logo {
+    top: 86%;
   }
 }
 
 /*Tablet*/
 @media only screen and (min-width: 768px) and (max-width:991px) {
-  .container{
+  .container {
     width: 100%;
     position: relative;
-  }
-  .container .center-contents {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 0%);
   }
 }
