@@ -49,7 +49,8 @@ body {
 .container .center-contents img,
 .container .center-contents h1,
 .container .center-contents p, 
-.container .btn p{
+.container .btn p,
+.card-parent .card-child .center-contents {
   display: block;
   margin: auto;
   text-align: center;
@@ -150,6 +151,40 @@ button:focus {
 }
 
 
+/* Hostpitals css */
+.container .card-parent {
+  height: 90vh;
+  max-width: 700px;
+  margin: auto;
+  display: grid;
+  place-items: center;
+  border: 1px solid blue;
+}
+
+.container .card-parent .card-child {
+  border-radius: 10px;
+  background: rgba(217, 217, 217, 0.20);
+  box-shadow: 2px 9px 32px 0px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(28.450000762939453px);
+  width: 391px;
+  height: 380px;
+  border: 1px solid beige;
+}
+
+
+.container .card-parent .card-child img {
+  width: 220px;
+  height: 150px;
+  margin-top: 20px;
+}
+.carousel-item {
+  border: 1px solid yellow;
+  
+}
+/* .container .btnss {
+  position: fixed;
+} */
+
 /*Phone*/
 @media only screen and (max-width: 767px) {
   .container{
@@ -158,7 +193,7 @@ button:focus {
   }
   .container .center-contents {
    display: block;
-   padding-top: 120px;
+   padding-top: 20px;
   }
   .container .center-contents h1 {
     font-size: 1.8em;
