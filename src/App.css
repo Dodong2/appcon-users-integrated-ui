@@ -51,8 +51,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 70vh;
   margin-top: 0%;
+  height: 70vh;
 }
 
 .container .center-contents img,
@@ -64,7 +64,7 @@ body {
   margin: auto;
   text-align: center;
   color: var(--white);
-  font-size: 1em;
+  font-size: 1em;;
 }
 
 .container .center-contents h1 {
@@ -78,22 +78,29 @@ body {
 }
 
 /*layer for logo */
-.layer-stack {
+.image-stack {
+  position: relative;
+}
+
+
+
+.image-stack .layer-stack {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 300px;
-  /* I-set ang height base sa iyong pangangailangan */
   position: relative;
   z-index: -100;
 }
 
-.layer-stack img {
+
+.image-stack .layer-stack img {
   position: fixed;
-  top: 50%;
+  top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
   margin-top: -200px;
+  z-index: 10;
 }
 
 /*Button*/
@@ -164,7 +171,7 @@ button:focus {
 /*LOGO*/
 .loading-container .logo {
   position: fixed;
-  top: 83%;
+  top: 75%;
   left: 50%;
   width: 106px;
   height: 106px;
@@ -239,8 +246,26 @@ button:focus {
   }
 
   .loading-container .logo {
-    top: 86%;
+    position: fixed;
+    top: 75%;
+    left: 50%;
+    
+    transform: translate(-50%,-50%);
+  }s
+  .image-stack .layer-stack {
+    width: 100%;
+    height: auto;
   }
+  .image-stack .layer-stack img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .loading-container .logo {
+    max-width: 100%;
+    height: auto;
+  }
+
 }
 
 /*Tablet*/

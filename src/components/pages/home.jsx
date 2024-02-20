@@ -5,7 +5,7 @@ import layer1 from "../images/layer1.svg";
 import layer2 from "../images/layer2.svg";
 import layer3 from "../images/layer3.svg";
 import layer4 from "../images/layer4.svg";
-import location from "../images/location.svg";
+import location from "../images/location.png";
 
 const Home = () => {
   //useState Sections
@@ -45,12 +45,20 @@ const Home = () => {
         <div className="container">
           {/* if modal is open magpapakita to once na ma-click si button na find nearest.....*/}
           <div className="center-contents">
-            <div>
-              <img src={location} alt="logo" />
+            <div className="image-stack">
+              <div className="layer-stack">
+                <img src={location} alt="logo" />
+                <img src={layer1} alt="" />
+                <img src={layer2} alt="" />
+                <img src={layer3} alt="" />
+                <img src={layer4} alt="" />
+              </div>
               <h1>Access your location</h1>
               <p>We need your permission to access your location.</p>
             </div>
           </div>
+          <br />
+          <br />
           <div className="btn">
             <button
               onClick={allowLocation}
@@ -67,31 +75,29 @@ const Home = () => {
         <div className="container">
           {/* unang makikita after ng loading */}
           <div className="center-contents">
-            <div>
             <div className="image-stack">
-            <div className="layer-stack">
-              <img src={layer1} alt="" />
-              <img src={layer2} alt="" />
-              <img src={layer3} alt="" />
-              <img src={layer4} alt="" />
-            </div>
-          </div>
+              <div className="layer-stack">
+                <img src={layer1} alt="" />
+                <img src={layer2} alt="" />
+                <img src={layer3} alt="" />
+                <img src={layer4} alt="" />
+              </div>
+              <br />
               <h1>HEAN</h1>
               <p>Health Alert Network</p>
             </div>
           </div>
           <div className="btn">
-          <div>
-                <p>
-                  Your guide to the nearest hospital that could cater your
-                  emergency needs.
-                </p>
-                <p>Just click the button below 💙</p>
-              </div>
+            <div>
+              <p>
+                Your guide to the nearest hospital that could cater your
+                emergency needs.
+              </p>
+              <p>Just click the button below 💙</p>
+            </div>
             <button onClick={tggleModal} type="button">
               Find Nearest Hospital
             </button>
-            
           </div>
         </div>
       )}

@@ -25,7 +25,6 @@ function App() {
         <div className={`${isLoading ? 'visible' : 'hidden'}`}>
           <div className="loading-logo">
             {/*LOGO*/}
-            <div className="logo">
             <div className="image-stack">
             <div className="layer-stack">
               <img src={loadlayer1} alt="" />
@@ -34,7 +33,7 @@ function App() {
               <img src={loadlayer4} alt="" />
             </div>
           </div>
-            </div>
+            
           </div>
         </div>
       </div>
