@@ -3,24 +3,24 @@
   margin: 0;
   padding: 0;
   outline: none;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   -webkit-tap-highlight-color: transparent;
 }
 
 :root {
-  --white: #FFFFFF;
+  --white: #ffffff;
   --bg: rgb(25, 25, 162);
 }
 
 /* Font */
 @font-face {
-  font-family: 'Poppins';
-  src: url('./components/fonts/Poppins-Light.ttf');
+  font-family: "Poppins";
+  src: url("./components/fonts/Poppins-Light.ttf");
 }
 
 @font-face {
-  font-family: 'Poppins-Bold';
-  src: url('./components/fonts/Poppins-Bold.ttf');
+  font-family: "Poppins-Bold";
+  src: url("./components/fonts/Poppins-Bold.ttf");
 }
 
 body,
@@ -31,8 +31,7 @@ html {
 body {
   height: 100vh;
   width: 100%;
-  background:
-    url(./components/images/mainBg.jpg);
+  background: url(./components/images/mainBg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -64,7 +63,7 @@ body {
   margin: auto;
   text-align: center;
   color: var(--white);
-  font-size: 1em;;
+  font-size: 1em;
 }
 
 .container .center-contents h1 {
@@ -82,8 +81,6 @@ body {
   position: relative;
 }
 
-
-
 .image-stack .layer-stack {
   display: flex;
   align-items: center;
@@ -92,7 +89,6 @@ body {
   position: relative;
   z-index: -100;
 }
-
 
 .image-stack .layer-stack img {
   position: fixed;
@@ -113,7 +109,7 @@ body {
 
 .container .btn button {
   width: 269px;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-size: 15px;
   color: white;
   cursor: pointer;
@@ -123,9 +119,10 @@ body {
   gap: 10px;
   border: none;
   border-radius: 50px;
-  background: linear-gradient(to right, #0038FF, #00D1FF, #0038FF, #00D1FF);
+  background: linear-gradient(to right, #0038ff, #00d1ff, #0038ff, #00d1ff);
   background-size: 300% 100%;
-  transition: background-position 0.4s ease-in-out, box-shadow 0.4s ease-in-out, color 0.4s ease-in-out;
+  transition: background-position 0.4s ease-in-out, box-shadow 0.4s ease-in-out,
+    color 0.4s ease-in-out;
   animation: shadow-color 5s linear infinite;
 }
 
@@ -153,7 +150,6 @@ button:focus {
     box-shadow: 0 4px 15px 0 rgba(0, 56, 255, 0);
   }
 }
-
 
 /* Loading Screen */
 .loading-container {
@@ -189,7 +185,6 @@ button:focus {
   transition: opacity 1s ease-out;
 }
 
-
 /* Hostpitals css */
 .container .card-parent {
   height: 90vh;
@@ -202,14 +197,13 @@ button:focus {
 
 .container .card-parent .card-child {
   border-radius: 10px;
-  background: rgba(217, 217, 217, 0.20);
+  background: rgba(217, 217, 217, 0.2);
   box-shadow: 2px 9px 32px 0px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(28.450000762939453px);
   width: 391px;
   height: 380px;
   border: 1px solid beige;
 }
-
 
 .container .card-parent .card-child img {
   width: 220px;
@@ -219,9 +213,7 @@ button:focus {
 
 .carousel-item {
   border: 1px solid yellow;
-
 }
-
 
 /*Phone*/
 @media only screen and (max-width: 767px) {
@@ -240,8 +232,8 @@ button:focus {
     font-size: 1.8em;
   }
 
-  .btn div>p:nth-child(1),
-  .btn div>p:nth-child(2) {
+  .btn div > p:nth-child(1),
+  .btn div > p:nth-child(2) {
     font-size: 10px;
   }
 
@@ -249,10 +241,10 @@ button:focus {
     position: fixed;
     top: 75%;
     left: 50%;
-    
-    transform: translate(-50%,-50%);
-  }s
-  .image-stack .layer-stack {
+
+    transform: translate(-50%, -50%);
+  }
+  s .image-stack .layer-stack {
     width: 100%;
     height: auto;
   }
@@ -265,11 +257,10 @@ button:focus {
     max-width: 100%;
     height: auto;
   }
-
 }
 
 /*Tablet*/
-@media only screen and (min-width: 768px) and (max-width:991px) {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
   .container {
     width: 100%;
     position: relative;
