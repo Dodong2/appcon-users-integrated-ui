@@ -1,5 +1,9 @@
 import { useState, useEffect } from 'react'
-import logo from '../images/Temologo.svg'
+import logo from '../images/logoHean.png'
+import loading1 from '../images/load1-layer.svg'
+import loading2 from '../images/load2-layer.svg'
+import loading3 from '../images/load3-layer.svg'
+import loading4 from '../images/load4-layer.svg'
 
 function App() {
 
@@ -21,8 +25,12 @@ function App() {
         <div className={`first-page ${isLoading ? 'visible' : 'hidden'}`}>
           <div className="loading-logo">
             {/*LOGO*/}
-            <div className="logo">
-              <img src={logo} alt='logo'/>
+            <div className='layers-logo'>
+            <img src={logo} alt='logo'/>
+            <img src={loading1}/>
+            <img src={loading2}/>
+            <img src={loading3}/>
+            <img src={loading4}/>
             </div>
           </div>
         </div>
