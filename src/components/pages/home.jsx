@@ -1,8 +1,12 @@
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Load from './Loading';
-import logo from '../images/Temologo.svg';
+import logo from '../images/logoHean.png';
 import location from '../images/location.svg';
+import layer1 from '../images/layer1.svg'
+import layer2 from '../images/layer2.svg'
+import layer3 from '../images/layer3.svg'
+import layer4 from '../images/layer4.svg'
 
 const Home = () => {
   //useState Sections
@@ -42,7 +46,13 @@ const Home = () => {
         <div className='container'>
          {/* if modal is open magpapakita to once na ma-click si button na find nearest.....*/}
           <div className="center-contents">
-            <img src={location} alt='logo' />
+          <div className='main-layers'>
+          <img src={location} alt='logo'/>
+          <img src={layer1}/>
+          <img src={layer2}/>
+          <img src={layer3}/>
+          <img src={layer4}/>
+          </div>
             <h1>Access your location</h1>
             <p>We need your permission to access your location.</p>
           </div>
@@ -60,11 +70,18 @@ const Home = () => {
         <div className='container'>
          {/* unang makikita after ng loading */}
           <div className="center-contents">
-            <img src={logo} alt='logo' />
+          <div className='main-layers'>
+          <img src={logo} alt='logo'/>
+          <img src={layer1}/>
+          <img src={layer2}/>
+          <img src={layer3}/>
+          <img src={layer4}/>
+          </div>
             <h1>HEAN</h1>
             <p>Health Alert Network</p>
           </div>
           <div className="btn">
+          <p>Caring for life’s greatest treasure: health.</p>
             <button onClick={tggleModal} type="button">Find Nearest Hospital</button>
           </div>
         </div>
