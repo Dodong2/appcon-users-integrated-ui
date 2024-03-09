@@ -50,26 +50,58 @@ body {
   padding-top: 120px;
 }
 
-.container .center-contents img,
+/* .container .center-contents img,
 .container .center-contents h1,
 .container .center-contents p {
+  width: fit-content;
   display: block;
-  margin: auto;
+  margin: 0 auto;
   text-align: center;
   color: var(--white);
   font-size: 1em;
+} */
 
-
+.container .center-contents img {
+  width: fit-content;
+  display: block;
+  margin: 0 auto;
 }
 
-.container .center-contents h1 {
+
+.txt-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  text-align: center;
+  color: var(--white);
+  font-size: 1em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 80%);
+  line-height: 20px;
+}
+
+.txt-title h1 {
   text-align: center;
   font-family: Poppins-Bold;
-  font-size: 2em;
+  font-size: clamp(2rem, 0.3043rem + 3.4783vw, 2rem);
+  font-weight: bold;
+  font-style: normal;
+  line-height: 10px;
+}
+/* .container .center-contents h1 {
+  text-align: center;
+  font-family: Poppins-Bold;
+  font-size: clamp(2rem, 0.3043rem + 3.4783vw, 2rem);
   font-weight: bold;
   font-style: normal;
   line-height: normal;
-  margin-top: 12px;
+} */
+
+.container .center-contents p {
+  font-size: clamp(15px, 0.3043rem + 3.4783vw, 15px);
 }
 
 /*Button*/
@@ -369,6 +401,11 @@ body {
 
   .card-body .btn3 button img {
     width: 15px;
+  }
+  .txt-title {
+    transform:  translate(-50%, 70%);
+    line-height: 20px;
+    font-size: 0.8em;
   }
 
 }
