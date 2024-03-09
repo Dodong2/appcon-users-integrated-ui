@@ -77,11 +77,13 @@ const Home = () => {
           <img src={layer3}/>
           <img src={layer4}/>
           </div>
+          </div>
+          <div className='txt-title'>
             <h1>HEAN</h1>
             <p>Health Alert Network</p>
-          </div>
+            <p>Caring for life’s greatest treasure: health.</p>
+            </div>
           <div className="btn">
-          <p>Caring for life’s greatest treasure: health.</p>
             <button onClick={tggleModal} type="button">Find Nearest Hospital</button>
           </div>
         </div>
