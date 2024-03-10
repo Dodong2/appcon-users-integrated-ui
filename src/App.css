@@ -31,7 +31,7 @@
 }
 
 body {
-  height: 100vh;
+  height: 100svh;
   background: url(./components/images/mainBg.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -196,6 +196,7 @@ body {
   z-index: 100;
 }
 
+/* Home CSS */
 /* main layers */
 .center-contents .main-layers {
   position: fixed;
@@ -213,17 +214,17 @@ body {
   height: 300px;
   z-index: -1;
 }
-
+.main-layers .location-logo:nth-child(1) {
+  height: 168px;
+  width: 168px;
+}
 .main-layers img {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.main-layers .location-logo:nth-child(1) {
-  height: 168px;
-  width: 168px;
-}
+
 .main-layers img:nth-child(1) {
   z-index: 4;
   top: 50%;
@@ -231,18 +232,51 @@ body {
   height: 116px;
   width: 129px;
 }
+
 .main-layers img:nth-child(2) {
   z-index: 3;
+  animation-delay: 0s;
+  border-radius: 50%;
+  animation: pulse 4s ease-out infinite;
+  opacity: 0;
 }
 .main-layers img:nth-child(3) {
   z-index: 2;
+  animation-delay: 4s;
+  border-radius: 50%;
+  animation: pulse 4s ease-out infinite;
+  opacity: 0;
 }
 .main-layers img:nth-child(4) {
   z-index: 1;
+  animation-delay: 8s;
+  border-radius: 50%;
+  animation: pulse 4s ease-out infinite;
+  opacity: 0;
 }
 .main-layers img:nth-child(5) {
   z-index: 1;
+  animation-delay: 12s;
+  border-radius: 50%;
+  animation: pulse 4s ease-out infinite;
+  opacity: 0;
+
 }
+
+@keyframes pulse {
+  0% {
+    opacity: 0;
+}
+50% {
+    opacity: 0.8;
+}
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1.5);
+  }
+}
+
+
 
 /*LOGO*/
 .loading-container .layers-logo {
@@ -394,6 +428,102 @@ body {
   margin-left: 3px;
 }
 
+/* SignUp Button CSS */
+.signUp-btn {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  position: relative;
+  padding-top: 50px;
+}
+.signUp-btn button {
+  font-family: Poppins;
+  border-radius: 20px;
+  border: none;
+  background: var(--card-bg);
+  font-size: clamp(22px, 8vw, 22px);
+  color: var(--white);
+  width: 150px;
+  padding: 5px;
+
+}
+.signUp-btn button span img {
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+  margin-right: 5px;
+}
+
+/* LoginForm css */
+.login-form {
+  background-image: url(../src/components/images/bg.png);
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  margin: 30px 0;
+  position: relative;
+}
+.header-container h1 {
+  color: #fff;
+  text-align: center;
+
+  font-size: 2.688rem;
+  font-weight: 800;
+  line-height: normal;
+  margin-bottom: 0;
+}
+
+.header-container p {
+  color: #fff;
+  text-align: center;
+  font-size: 0.5rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*Phone*/
 @media only screen and (max-width: 767px) {
   .container {
@@ -457,11 +587,29 @@ body {
   .txt-title-1 p {
     line-height: 20px;
   }
+  /* SignUp Button CSS */
+  .signUp-btn {
+    padding-top: 0;
+  }
+  .signUp-btn button {
+    font-size: clamp(15px, 8vw, 15px);
+    width: 120px;
+  }
+  .signUp-btn button span img {
+  width: 26px;
+  height: 26px;
+  flex-shrink: 0;
+  margin-right: 5px;
+  }
 }
 
 /*Tablet*/
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .container {
     width: 100%;
+  }
+    /* SignUp Button CSS */
+  .signUp-btn button {
+    font-size: clamp(15px, 8vw, 15px);
   }
 }

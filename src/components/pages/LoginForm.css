@@ -1,0 +1,621 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+body {
+  background-image: url(/public/bg.png);
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  margin: 30px 0;
+  position: relative;
+}
+.header-container h1 {
+  color: #fff;
+  text-align: center;
+
+  font-size: 2.688rem;
+  font-weight: 800;
+  line-height: normal;
+  margin-bottom: 0;
+}
+.header-container p {
+  color: #fff;
+  text-align: center;
+  font-size: 0.5rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-bottom: 0;
+}
+form h2 {
+  overflow: hidden;
+  color: #fff;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 4.2px;
+}
+form {
+  padding: 0 54px;
+  margin-top: 50px;
+}
+form path {
+  color: #fff;
+}
+form .fill {
+  display: flex;
+  height: 40px;
+  padding: 8px 12px;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  border-radius: 4px;
+  border: 1.5px solid var(--Neutral-500, #64748b);
+  background-color: transparent;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+.password-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.password-input {
+  position: relative;
+}
+input {
+  color: #fff;
+}
+.eye-icon {
+  position: absolute;
+  right: 10px; /* Adjust position as needed */
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-bottom: 24px;
+  accent-color: #70e000;
+}
+.fill {
+  position: relative;
+}
+.checkbox p {
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 10px;
+}
+form button {
+  display: flex;
+  width: 100%;
+  height: 44px;
+  padding: 6px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  background: linear-gradient(103deg, #00e0ff -91.33%, #029 97.14%);
+  color: #fff;
+  margin-bottom: 24px;
+  border: transparent;
+  cursor: pointer;
+  transition: all ease-in 0.25s;
+}
+.button-submit:hover {
+  box-shadow: 5px 5px 35px #029, 0 0 20px #00e0ff, 0 0 30px #029;
+  background-size: 300% 100%;
+  transition: background-position 0.4s ease-in-out, box-shadow 0.4s ease-in-out,
+    color 0.4s ease-in-out;
+  animation: shadow-color 2s linear infinite;
+}
+form p {
+  color: #fff;
+  text-align: center;
+  font-size: 0.813rem;
+}
+form a {
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  background: linear-gradient(89deg, #00e0ff 51.22%, #0038ff 99.47%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-overflow: ellipsis;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.blink {
+  width: 100px; /* Adjust the width of the blink image as needed */
+  height: auto; /* Maintain aspect ratio */
+  position: absolute;
+  top: 50%;
+  left: calc(50% + 100px); /* Adjust the initial position of the blink image */
+  transform: translateY(-50%);
+}
+img {
+  width: 200px;
+  height: auto;
+  margin-bottom: 10;
+  display: inline-block;
+}
+.text {
+  margin-top: -60px;
+}
+.logo img {
+  position: relative;
+}
+.pulse,
+.register-pulse {
+  width: 150px;
+  height: 150px;
+  background: linear-gradient(#00e0ff, #029);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: -1;
+  opacity: 0.4;
+}
+
+.pulse:before,
+.register-pulse:before,
+.pulse:after,
+.register-pulse:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #00e0ff;
+  border-radius: 50%;
+  z-index: -1;
+  opacity: 0.7;
+}
+
+.pulse:before,
+.register-pulse:before {
+  animation: pulse 2s ease-out infinite;
+}
+
+.pulse:after,
+.register-pulse:after {
+  animation: pulse 2s 1s ease-out infinite;
+}
+.register-pulse {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+.otp-pulse {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(#00e0ff, #029);
+  position: absolute;
+  top: 800%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  border-radius: 50%;
+  z-index: -1;
+  opacity: 0.1;
+}
+
+.otp-pulse:before,
+.otp-pulse:after {
+  content: "";
+  position: absolute;
+  left: -25px;
+  width: 120%;
+  height: 120%;
+  background-color: #00e0ff;
+  border-radius: 50%;
+  z-index: -1;
+  opacity: 1;
+}
+
+.otp-pulse:before {
+  animation: pulse 2s ease-out infinite;
+}
+
+.otp-pulse:after {
+  animation: pulse 2s 1s ease-out infinite;
+}
+.name-form input:first-child {
+  margin-right: 5px;
+}
+.name-form,
+.name-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.name-header h2 {
+  margin-right: auto;
+}
+.register-text h2 {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+}
+form .register-text {
+  color: #fff;
+  text-align: start;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom: 70px;
+}
+svg {
+  color: #fff;
+}
+.otp-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 50px;
+}
+.otp-header h1 {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  background: linear-gradient(90deg, #00e0ff 0%, #0038ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+}
+.otp-header svg {
+  cursor: pointer;
+  font-size: 1rem;
+}
+.otp-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  padding: 83px 36px;
+}
+.otp-info {
+  width: 100%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 83px;
+  text-align: center;
+}
+.otp-info h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 32px;
+  margin-bottom: 5px;
+}
+.otp-info p {
+  font-size: 15px;
+  font-style: normal;
+  line-height: 24px;
+  margin-bottom: 5px;
+}
+.otp-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 100px;
+  gap: 16px;
+}
+.otp-num {
+  color: #030303;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.15rem;
+}
+.otp-input input {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 1px solid var(--Sky-Light, #e3e5e5);
+  background: var(--Sky-White, #fff);
+}
+.otp-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.otp-button button {
+  display: flex;
+  width: 327px;
+  height: 48px;
+  padding: 16px 0px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 48px;
+  background: linear-gradient(272deg, #0038ff 25.54%, #00e0ff 137.78%);
+  border: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+.otp-button button:hover {
+  box-shadow: 5px 5px 35px #029, 0 0 20px #00e0ff, 0 0 30px #029;
+  background-size: 300% 100%;
+  transition: background-position 0.4s ease-in-out, box-shadow 0.4s ease-in-out,
+    color 0.4s ease-in-out;
+  animation: shadow-color 2s linear infinite;
+}
+.otp-button p {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  background: linear-gradient(269deg, #0038ff 8.2%, #00e0ff 168.45%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+/*Keyframes for the animations*/
+@keyframes pulse {
+  100% {
+    transform: scale(2.5);
+    opacity: 0;
+  }
+}
+@keyframes shadow-color {
+  0% {
+    box-shadow: 0 4px 15px 0 rgba(0, 34, 153, 1);
+  }
+
+  75% {
+    box-shadow: 0 0 25px 0 rgba(0, 224, 255, 1);
+  }
+
+  100% {
+    box-shadow: 0 4px 15px 0 rgba(0, 34, 153, 1);
+  }
+}
+/*Responsiveness*/
+@media screen and (min-width: 800px) {
+  body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .container-header {
+    margin: 0;
+  }
+  .form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+  }
+
+  .pulse {
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(#00e0ff, #029);
+    position: absolute;
+    top: 42%;
+    left: calc(-10% + 100px);
+    transform: translateY(-50%);
+    border-radius: 50%;
+    z-index: -1;
+    opacity: 0.4;
+  }
+
+  .pulse:before,
+  .pulse:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #00e0ff;
+    border-radius: 50%;
+    z-index: -1;
+    opacity: 0.7;
+  }
+
+  .pulse:before {
+    animation: pulse 2s ease-out infinite;
+  }
+
+  .pulse:after {
+    animation: pulse 2s 1s ease-out infinite;
+  }
+
+  @keyframes pulse {
+    100% {
+      transform: scale(2.5);
+      opacity: 0;
+    }
+  }
+
+  form {
+    width: 485px;
+    height: 699px;
+    padding: 0px 20px;
+    margin-top: 10px;
+  }
+  .header-container {
+    margin-top: 70px;
+    position: relative;
+  }
+  .header-container h1 {
+    font-size: 4rem;
+    line-height: 1;
+    margin-bottom: 0;
+  }
+  .header-container p {
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+  .text {
+    margin-top: -65px;
+  }
+  form h2,
+  a,
+  p {
+    font-size: 1.25rem;
+  }
+  img {
+    width: 250px;
+    height: auto;
+    margin-bottom: 10;
+    display: inline-block;
+  }
+  .logo img + h1 {
+    margin-top: -30px;
+  }
+  .logo img {
+    position: relative;
+  }
+  .blink {
+    width: 400px;
+    height: auto;
+    position: absolute;
+    top: 20%;
+    left: calc(40% + -200px);
+    transform: translateY(-50%);
+  }
+  .password-input {
+    position: relative;
+  }
+
+  .eye-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  form a,
+  form p {
+    font-size: 1rem;
+  }
+  form .fill {
+    padding: 15px;
+  }
+  input {
+    color: #fff;
+  }
+  .new-account-text {
+    padding: 0;
+  }
+  .reg-form {
+    width: 485px;
+    height: 800px;
+    padding: 0px 20px;
+    margin-top: 10px;
+  }
+  .otp-header {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 50px;
+    margin-left: 200px;
+  }
+  .otp-header svg {
+    margin-right: 5px;
+  }
+  .register-pulse {
+    display: flex;
+  }
+  .otp-pulse {
+    width: 250px;
+    height: 250px;
+    background: linear-gradient(#00e0ff, #029);
+    position: absolute;
+    top: 800%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    border-radius: 50%;
+    z-index: -1;
+    opacity: 0.1;
+  }
+  .register-pulse {
+    width: 250px;
+    height: 250px;
+    background: linear-gradient(#00e0ff, #029);
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    border-radius: 50%;
+    z-index: -1;
+    opacity: 0.07;
+  }
+  .otp-pulse:before,
+  .otp-pulse:after {
+    content: "";
+    position: absolute;
+    left: -45px;
+    top: -20%;
+    width: 130%;
+    height: 130%;
+    background-color: #00e0ff;
+    border-radius: 50%;
+    z-index: -1;
+    opacity: 0.7;
+  }
+
+  .register-pulse:before,
+  .register-pulse:after {
+    content: "";
+    position: absolute;
+    left: -45px;
+    top: -20%;
+    width: 140%;
+    height: 140%;
+    background-color: #00e0ff;
+    border-radius: 50%;
+    z-index: -1;
+    opacity: 0.7;
+  }
+
+  .register-pulse:before {
+    animation: pulse 2s ease-out infinite;
+  }
+
+  .register-pulse:after {
+    animation: pulse 2s 1s ease-out infinite;
+  }
+}

@@ -7,6 +7,7 @@ import layer1 from "../images/layer1.svg";
 import layer2 from "../images/layer2.svg";
 import layer3 from "../images/layer3.svg";
 import layer4 from "../images/layer4.svg";
+import SignUpBtn from "./SignUpBtn";
 
 const Home = () => {
   //useState Sections
@@ -48,15 +49,15 @@ const Home = () => {
           <div className="center-contents">
             <div className="main-layers">
               <img src={location} alt="logo" className="location-logo"/>
-              <img src={layer1} />
-              <img src={layer2} />
-              <img src={layer3} />
-              <img src={layer4} />
+              <img src={layer1} style={{"--i":0}}/>
+              <img src={layer2} style={{"--i":1}}/>
+              <img src={layer3} style={{"--i":2}}/>
+              <img src={layer4} style={{"--i":3}}/>
             </div>
           </div>
           <div className="txt-title-1">
             <h1>Access your location</h1>
-            <p>We need your permission to access your location.</p>
+            <p>We need your permission to <br/><span>access your location.</span> </p>
           </div>
           <div className="btn">
             <button
@@ -72,6 +73,7 @@ const Home = () => {
         </div>
       ) : (
         <div className="container">
+        <SignUpBtn/>
           {/* unang makikita after ng loading */}
           <div className="center-contents">
             <div className="main-layers">
