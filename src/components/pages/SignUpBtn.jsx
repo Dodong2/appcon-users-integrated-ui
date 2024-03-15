@@ -4,11 +4,10 @@ const SignUpBtn = () => {
   return (
     <>
       <div className="signUp-btn">
-      <Link to="/LoginForm">
-          <button><span>
+      <Link to="/LoginForm"  className="no-textdeco">
+          <button className="custom-button">
           <img src={personSign}/>
-          </span>
-          Signup
+          <span>Signup</span>
           </button>
           </Link>
           </div>
