@@ -49,10 +49,10 @@ const Home = () => {
           <div className="center-contents">
             <div className="main-layers">
               <img src={location} alt="logo" className="location-logo"/>
-              <img src={layer1} style={{"--i":0}}/>
-              <img src={layer2} style={{"--i":1}}/>
-              <img src={layer3} style={{"--i":2}}/>
-              <img src={layer4} style={{"--i":3}}/>
+              <img src={layer1}/>
+              <img src={layer2}/>
+              <img src={layer3}/>
+              <img src={layer4}/>
             </div>
           </div>
           <div className="txt-title-1">

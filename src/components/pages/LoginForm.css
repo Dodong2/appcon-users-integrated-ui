@@ -20,7 +20,6 @@ body {
 .header-container h1 {
   color: #fff;
   text-align: center;
-
   font-size: 2.688rem;
   font-weight: 800;
   line-height: normal;
@@ -277,6 +276,8 @@ form .register-text {
 svg {
   color: #fff;
 }
+
+/* END */
 .otp-header {
   display: flex;
   align-items: center;

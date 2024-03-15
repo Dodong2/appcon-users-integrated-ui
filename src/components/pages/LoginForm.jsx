@@ -1,6 +1,7 @@
-import { useState } from 'react';
 import logo from '../images/g39.png';
-import { IoEyeSharp } from "react-icons/io5";
+import { IoEyeSharp } from 'react-icons/io5';
+import { useState } from 'react';
+
 const LoginForm = () => {
   const [showPassword, setShowPassword] = useState(false);
 
@@ -9,7 +10,7 @@ const LoginForm = () => {
   };
 
   return (
-    <div className='login-form'>
+    <div className='login-body'>
       <div className="form-container">
         <div className="header-container">
           <img src={logo} className="logo" alt="Logo" />
