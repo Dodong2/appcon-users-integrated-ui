@@ -432,10 +432,10 @@ body {
 
 
 /* LoginForm css */
-.login-body {
+/* .login-body {
   background: url('./components/images/loginBG.png');
 }
-.header-container {
+.header-container{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -444,16 +444,16 @@ body {
   margin: 30px 0;
   position: relative;
 }
-.header-container h1 {
-  color: #fff;
+.header-container h1{
+  color: #FFF;
   text-align: center;
   font-size: 2.688rem;
   font-weight: 800;
   line-height: normal;
   margin-bottom: 0;
 }
-.header-container p {
-  color: #fff;
+.header-container p{
+  color: #FFF;
   text-align: center;
   font-size: 0.5rem;
   font-style: normal;
@@ -461,9 +461,9 @@ body {
   line-height: normal;
   margin-bottom: 0;
 }
-form h2 {
+form h2{
   overflow: hidden;
-  color: #fff;
+  color: #FFF;
   text-overflow: ellipsis;
   white-space: nowrap;
   font-size: 14px;
@@ -471,15 +471,16 @@ form h2 {
   font-weight: 600;
   line-height: normal;
   margin-bottom: 4.2px;
+  
 }
-form {
+form{
   padding: 0 54px;
   margin-top: 50px;
 }
 form path {
   color: #fff;
-}
-form .fill {
+} */
+/* form .fill{
   display: flex;
   height: 40px;
   padding: 8px 12px;
@@ -487,7 +488,7 @@ form .fill {
   gap: 8px;
   align-self: stretch;
   border-radius: 4px;
-  border: 1.5px solid var(--Neutral-500, #64748b);
+  border: 1.5px solid var(--Neutral-500, #64748B);
   background-color: transparent;
   margin-bottom: 24px;
   display: flex;
@@ -495,8 +496,9 @@ form .fill {
   justify-content: center;
   flex-direction: column;
   width: 100%;
+  
 }
-.password-div {
+.password-div{
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -504,13 +506,13 @@ form .fill {
 .password-input {
   position: relative;
 }
-input {
+input{
   color: #fff;
 }
 .eye-icon {
   position: absolute;
   right: 10px; /* Adjust position as needed */
-  top: 50%;
+  /* top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
 }
@@ -523,16 +525,17 @@ input {
 }
 .fill {
   position: relative;
-}
-.checkbox p {
-  color: #fff;
+}    
+.checkbox p{
+  color: #FFF;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   margin-left: 10px;
-}
-form button {
+  
+} */
+/* form button {
   display: flex;
   width: 100%;
   height: 44px;
@@ -542,30 +545,31 @@ form button {
   gap: 4px;
   flex-shrink: 0;
   border-radius: 4px;
-  background: linear-gradient(103deg, #00e0ff -91.33%, #029 97.14%);
-  color: #fff;
+  background: linear-gradient(103deg, #00E0FF -91.33%, #029 97.14%);
+  color: #FFF;
   margin-bottom: 24px;
   border: transparent;
   cursor: pointer;
-  transition: all ease-in 0.25s;
+  transition: all ease-in .25s;
 }
 .button-submit:hover {
-  box-shadow: 5px 5px 35px #029, 0 0 20px #00e0ff, 0 0 30px #029;
+  box-shadow: 5px 5px 35px #029, 0 0 20px #00e0ff, 0 0 30px #029; 
   background-size: 300% 100%;
-  transition: background-position 0.4s ease-in-out, box-shadow 0.4s ease-in-out,
-    color 0.4s ease-in-out;
-  animation: shadow-color 2s linear infinite;
+transition: background-position 0.4s ease-in-out, box-shadow 0.4s ease-in-out,
+  color 0.4s ease-in-out;
+animation: shadow-color 2s linear infinite;
+  
 }
-form p {
-  color: #fff;
+form p{
+  color: #FFF;
   text-align: center;
   font-size: 0.813rem;
 }
-form a {
+form a{
   overflow: hidden;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
-  background: linear-gradient(89deg, #00e0ff 51.22%, #0038ff 99.47%);
+  background: linear-gradient(89deg, #00E0FF 51.22%, #0038FF 99.47%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -576,127 +580,120 @@ form a {
   line-height: normal;
 }
 .blink {
-  width: 100px; /* Adjust the width of the blink image as needed */
-  height: auto; /* Maintain aspect ratio */
+  width: 100px; 
+  height: auto; 
   position: absolute;
   top: 50%;
-  left: calc(50% + 100px); /* Adjust the initial position of the blink image */
+  left: calc(50% + 100px); 
   transform: translateY(-50%);
-}
-img {
+} */
+/* img {
   width: 200px;
   height: auto;
   margin-bottom: 10;
   display: inline-block;
-}
-.text {
+} */
+/* .text{
   margin-top: -60px;
 }
-.logo img {
+.logo img {  
   position: relative;
-}
-.pulse,
-.register-pulse {
+}  
+.pulse, .register-pulse {
   width: 150px;
   height: 150px;
-  background: linear-gradient(#00e0ff, #029);
+  background: linear-gradient(#00E0FF, #029);
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  left: 50%; 
+  transform: translate(-50%, -50%); 
   border-radius: 50%;
   z-index: -1;
   opacity: 0.4;
 }
-.pulse:before,
-.register-pulse:before,
-.pulse:after,
-.register-pulse:after {
+  
+.pulse:before, .register-pulse:before,
+.pulse:after, .register-pulse:after{
   content: "";
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #00e0ff;
+  background-color: #00E0FF;
   border-radius: 50%;
   z-index: -1;
   opacity: 0.7;
-}
-.pulse:before,
-.register-pulse:before {
+} */
+/* .pulse:before, .register-pulse:before {
   animation: pulse 2s ease-out infinite;
 }
-.pulse:after,
-.register-pulse:after {
+.pulse:after, .register-pulse:after {
   animation: pulse 2s 1s ease-out infinite;
 }
 .register-pulse {
   position: absolute;
-  top: 50%;
+  top:50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%,-50%);
   display: none;
 }
 .otp-pulse {
   width: 200px;
   height: 200px;
-  background: linear-gradient(#00e0ff, #029);
+  background: linear-gradient(#00E0FF, #029);
   position: absolute;
   top: 800%;
-  left: 50%;
-  transform: translate(-50%, -30%);
+  left: 50%; 
+  transform: translate(-50%, -30%); 
   border-radius: 50%;
   z-index: -1;
   opacity: 0.1;
 }
-
 .otp-pulse:before,
 .otp-pulse:after {
-  content: "";
-  position: absolute;
-  left: -25px;
-  width: 120%;
-  height: 120%;
-  background-color: #00e0ff;
-  border-radius: 50%;
-  z-index: -1;
-  opacity: 1;
-}
-.otp-pulse:before {
+    content: "";
+    position: absolute;
+    left: -25px;
+    width: 120%;
+    height: 120%;
+    background-color: #00E0FF;
+    border-radius: 50%;
+    z-index: -1;
+    opacity: 1;
+} */
+/* .otp-pulse:before {
   animation: pulse 2s ease-out infinite;
 }
-
 .otp-pulse:after {
   animation: pulse 2s 1s ease-out infinite;
 }
-.name-form input:first-child {
-  margin-right: 5px;
-}
-.name-form,
-.name-header {
-  display: flex;
+.name-form input:first-child{
+  margin-right: 5px; 
+ }
+ .name-form, .name-header{
+  display:flex;
   align-items: center;
   justify-content: space-evenly;
 }
-.name-header h2 {
+.name-header h2{
   margin-right: auto;
 }
-.register-text h2 {
+.register-text h2{
   display: flex;
   align-items: start;
   justify-content: start;
 }
 form .register-text {
-  color: #fff;
+  color: #FFF;
   text-align: start;
   font-size: 30px;
   font-style: normal;
   font-weight: 800;
-  line-height: 1;
-  margin-bottom: 70px;
+  line-height: 1; 
+  margin-bottom: 70px; 
 }
 svg {
   color: #fff;
-}
+} */
 
 
 
@@ -800,6 +797,118 @@ svg {
   flex-shrink: 0;
   margin-right: 5px;
   }
+  /* Responsive LoginForm */
+  /* .container-header{
+    margin: 0;
+}
+.form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; 
+    margin: 0;
+    flex-direction: column;
+  }
+  .pulse {
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(#00E0FF, #029);
+    position: absolute;
+    top: 42%;
+    left: calc(-10% + 100px); 
+    transform: translateY(-50%);
+    border-radius: 50%;
+    z-index: -1; 
+    opacity: .4;
+  } */
+  /* .pulse:before,
+      .pulse:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #00E0FF;
+        border-radius: 50%;
+        z-index: -1;
+        opacity: 0.7;
+      }
+      .pulse:before {
+        animation: pulse 2s ease-out infinite;
+      }
+      .pulse:after {
+        animation: pulse 2s 1s ease-out infinite;
+      }
+      @keyframes pulse {
+        100% {
+          transform: scale(2.5);
+          opacity: 0;
+        }
+      } */
+      /* form {
+        width: 485px;
+        height: 699px;
+        padding: 0px 20px;
+        margin-top: 10px;   
+      }
+      .header-container {
+        margin-top: 70px;
+        position: relative; 
+        
+     }
+     .header-container h1{
+       font-size: 4rem;
+       line-height: 1;
+       margin-bottom: 0;
+     }
+     .header-container p{
+       font-size: 1rem;
+       margin-bottom: 0;
+     } */
+     /* form h2,form a, p{
+      font-size: 1.25rem;
+    } */
+    /* img {
+      width: 250px;
+      height: auto;
+      margin-bottom: 10;
+      display: inline-block;
+    }
+    .logo img + h1{
+      margin-top: -30px;
+    }
+    .logo img {  
+      position: relative;
+    } */
+    /* .blink {
+      width: 400px;
+      height: auto;
+      position: absolute;
+      top: 20%;
+      left: calc(40% + -200px);
+      transform: translateY(-50%);
+    }
+    .password-input {
+      position: relative;
+    }
+    .eye-icon {
+      position: absolute;
+      right: 10px; 
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+    }
+    form a, form p{
+      font-size: 1rem;
+  }
+  form .fill{
+    padding: 15px;
+}
+input {
+  color: #fff;
+}
+.new-account-text{
+  padding: 0;
+} */
 }
 
 /*Tablet*/
