@@ -4,6 +4,7 @@ import Hospitals from './components/pages/hospitals';
 import LoginForm from './components/pages/LoginForm';
 import OTPVerification from './components/pages/OTPVerification';
 import OTP from './components/pages/OTP'
+import Register from './components/pages/RegisterForm'
 import './App.css';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Route path="/OTPVerification" element={<OTPVerification />} />
         <Route path="/OTP" element={<OTP />} />
         <Route path='/hospitals' element={<Hospitals />} />
+        <Route path='/RegisterForm' element={<Register />} />
       </Routes>
     </BrowserRouter>
   );
