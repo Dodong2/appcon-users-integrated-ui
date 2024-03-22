@@ -1,6 +1,7 @@
 import { IoEyeSharp } from "react-icons/io5";
 import LoginStyle from "./LoginForm.module.css";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const LoginForm = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -100,7 +101,7 @@ const LoginForm = () => {
             Sign Up
           </button>
           <p>
-            Already have an account? <a href="/LoginForm">Sign in here</a>
+            Already have an account? <Link to="/LoginForm">Sign in here</Link>
           </p>
         </form>
       </div>
