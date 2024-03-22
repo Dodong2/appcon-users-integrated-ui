@@ -90,7 +90,7 @@ const Home = () => {
             {/*<p>Caring for life’s greatest treasure: health.</p>*/}
           </div>
           <div className="btn">
-            <button onClick={tggleModal} type="button">
+            <button onClick={tggleModal} type="button" style={{border: 'none'}}>
               Find Nearest Hospital
             </button>
           </div>

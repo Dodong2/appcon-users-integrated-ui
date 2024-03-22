@@ -23,7 +23,6 @@ const LoginForm = () => {
       inputRefs.current[index - 1].current.focus();
     }
   };
-  {LoginStyle['']}
   return (
     <div className={LoginStyle['login-body']}>
       <div className={LoginStyle['form-container']}>
