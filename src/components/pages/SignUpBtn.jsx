@@ -13,6 +13,7 @@ const SignUpBtn = () => {
           </div>
     </>
   );
+  
 };
 
 export default SignUpBtn;

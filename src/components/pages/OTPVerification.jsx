@@ -41,10 +41,10 @@ const OTPVerification = () => {
           />
         </div>
         <div className={LoginStyle['otp-button']}>
-        <Link to="/OTP">
+        <Link to="/OTP" style={{textDecoration: 'none'}}>
         <button type="submit">Continue</button>
         </Link>
-        <Link to="/LoginForm">
+        <Link to="/LoginForm" style={{textDecoration: 'none'}}>
         <p>Back</p>
         </Link>
         </div>
