@@ -32,8 +32,8 @@ const LoginForm = () => {
           ></div>
         </div>
         <div className={LoginStyle['otp-header']}>
-          <Link to="/OTPVerification" style={{textDecoration: 'none'}}><SlArrowLeft /></Link>
-          <Link to="/LoginForm" style={{textDecoration: 'none'}}><h1>Previous</h1></Link>
+          <Link to="/LoginForm" style={{textDecoration: 'none'}}><SlArrowLeft /></Link>
+          <Link to="/OTPVerification" style={{textDecoration: 'none'}}><h1>Change number</h1></Link>
         </div>
         <div className={LoginStyle['otp-container']}>
           <div className={LoginStyle['otp-info']}

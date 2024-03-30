@@ -30,7 +30,7 @@ const OTPVerification = () => {
         </div>
         <div className={LoginStyle['otp-input']}
         >
-        <FaHashtag />
+        <FaHashtag  className={LoginStyle['icons-hashtag']}/>
         <input
             className={LoginStyle['mobile-tel']}
             type="tel"
