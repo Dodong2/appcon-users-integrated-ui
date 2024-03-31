@@ -57,7 +57,7 @@ const Hospitals = () => {
           <div className="card-body">
             <div className="txt-left">
               <h1>Hostpital 2</h1>
-              <p>CMC, Real, Calamba, 4027 Laguna</p>
+              <p>8817 National Hwy, Los Baños, Laguna</p>
             </div>
             <div className="txt-right">
               <p>

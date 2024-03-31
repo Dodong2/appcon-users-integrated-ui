@@ -37,6 +37,7 @@ body {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  background-color: var(--card-bg);
 }
 
 ::-webkit-scrollbar {
@@ -334,6 +335,8 @@ body {
 .card-body .txt-left p {
   color: var(--white);
   margin-bottom: 0;
+  word-wrap: break-word;
+  max-width: 300px;
 }
 
 .card-body .txt-right,
@@ -481,6 +484,8 @@ body {
 
   .card-body .txt-left p {
     font-size: 0.7em;
+    word-wrap: break-word;
+    max-width: 100px;
   }
 
   .card-body .txt-right,
