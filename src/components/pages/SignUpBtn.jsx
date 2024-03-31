@@ -7,7 +7,7 @@ const SignUpBtn = () => {
       <Link to="/LoginForm"  className="no-textdeco">
           <button className="custom-button">
           <img src={personSign}/>
-          <span>Signup</span>
+          <span>SignUp</span>
           </button>
           </Link>
           </div>
