@@ -7,7 +7,6 @@ import layer1 from "../images/layer1.svg";
 import layer2 from "../images/layer2.svg";
 import layer3 from "../images/layer3.svg";
 import layer4 from "../images/layer4.svg";
-import SignUpBtn from "./SignUpBtn";
 
 const Home = () => {
   //useState Sections
@@ -73,7 +72,6 @@ const Home = () => {
         </div>
       ) : (
         <div className="container">
-        <SignUpBtn/>
           {/* unang makikita after ng loading */}
           <div className="center-contents">
             <div className="main-layers">

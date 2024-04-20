@@ -527,7 +527,7 @@ body {
     line-height: 20px;
   }
   /* SignUp Button CSS */
-  .signUp-btn {
+  /* .signUp-btn {
     padding-top: 0;
   }
   .signUp-btn button {
@@ -539,119 +539,7 @@ body {
   height: 26px;
   flex-shrink: 0;
   margin-right: 5px;
-  }
-  /* Responsive LoginForm */
-  /* .container-header{
-    margin: 0;
-}
-.form-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh; 
-    margin: 0;
-    flex-direction: column;
-  }
-  .pulse {
-    width: 150px;
-    height: 150px;
-    background: linear-gradient(#00E0FF, #029);
-    position: absolute;
-    top: 42%;
-    left: calc(-10% + 100px); 
-    transform: translateY(-50%);
-    border-radius: 50%;
-    z-index: -1; 
-    opacity: .4;
   } */
-  /* .pulse:before,
-      .pulse:after {
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background-color: #00E0FF;
-        border-radius: 50%;
-        z-index: -1;
-        opacity: 0.7;
-      }
-      .pulse:before {
-        animation: pulse 2s ease-out infinite;
-      }
-      .pulse:after {
-        animation: pulse 2s 1s ease-out infinite;
-      }
-      @keyframes pulse {
-        100% {
-          transform: scale(2.5);
-          opacity: 0;
-        }
-      } */
-      /* form {
-        width: 485px;
-        height: 699px;
-        padding: 0px 20px;
-        margin-top: 10px;   
-      }
-      .header-container {
-        margin-top: 70px;
-        position: relative; 
-        
-     }
-     .header-container h1{
-       font-size: 4rem;
-       line-height: 1;
-       margin-bottom: 0;
-     }
-     .header-container p{
-       font-size: 1rem;
-       margin-bottom: 0;
-     } */
-     /* form h2,form a, p{
-      font-size: 1.25rem;
-    } */
-    /* img {
-      width: 250px;
-      height: auto;
-      margin-bottom: 10;
-      display: inline-block;
-    }
-    .logo img + h1{
-      margin-top: -30px;
-    }
-    .logo img {  
-      position: relative;
-    } */
-    /* .blink {
-      width: 400px;
-      height: auto;
-      position: absolute;
-      top: 20%;
-      left: calc(40% + -200px);
-      transform: translateY(-50%);
-    }
-    .password-input {
-      position: relative;
-    }
-    .eye-icon {
-      position: absolute;
-      right: 10px; 
-      top: 50%;
-      transform: translateY(-50%);
-      cursor: pointer;
-    }
-    form a, form p{
-      font-size: 1rem;
-  }
-  form .fill{
-    padding: 15px;
-}
-input {
-  color: #fff;
-}
-.new-account-text{
-  padding: 0;
-} */
 }
 
 /*Tablet*/
