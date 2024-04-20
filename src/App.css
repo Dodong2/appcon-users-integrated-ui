@@ -10,7 +10,7 @@
 :root {
   --white: #ffffff;
   --card-bg: #142629;
-  --card-btn2-bg: rgba(0, 0, 0, 0.2);
+  --card-btn2-bg: #71ff90;
   --card-btn3-red: #ff4848;
 }
 
@@ -235,15 +235,14 @@ body {
   z-index: 1;
 }
 
-
-
-
 /* Loading Screen */
 .loading-container {
   position: fixed;
   height: 100vh;
   width: 100%;
-  background: url(./components/images/bgImg1.webp);
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 9px 65px 0px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(500px);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -320,9 +319,11 @@ body {
 
 .card .card-body {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   background: var(--card-bg);
   backdrop-filter: blur(28.450000762939453px);
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .card-body .txt-left h1 {
@@ -355,27 +356,37 @@ body {
 }
 
 .card-body .btn1,
-.card-body .btn2,
 .card-body .btn3 {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.card-body .btn1 {
+  gap: 10px;
+}
+.btn-2 {
+  background: var(--card-btn2-bg);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-2 button {
+  display: flex;
+  justify-content: center;
+}
+.btn-2 button img {
+  height: 20px;
+  width: 20px;
+  text-align: center;
+}
+
 .card-body .btn1 button {
   background: none;
   border: none;
-  margin-bottom: 7px;
-}
-
-.card-body .btn2 button {
-  border-radius: 20px;
-  border: none;
-  background: var(--card-btn2-bg);
-  color: var(--white);
-  width: 182px;
-  gap: -19px;
-  padding: 5px;
 }
 
 .card-body .btn3 button {
@@ -402,8 +413,74 @@ body {
   margin-left: 3px;
 }
 
+/* Notification */
+.notif {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 9px 65px 0px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(50px);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.notif-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pulse {
+  position: relative;
+  width: 350px;
+  height: 350px;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 224, 255, 0.2) 0%,
+    rgba(0, 224, 255, 0.2) 100%
+  );
+  border-radius: 50%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+  opacity: 0.4;
+}
+.pulse span {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: inherit;
+  border-radius: inherit;
+  opacity: 0.8;
+  animation: pulse 4s ease-out infinite;
+  animation-delay: calc(1s * var(--i));
+}
+
+@keyframes pulse {
+  100% {
+    opacity: 0;
+    transform: scale(2);
+  }
+}
+
+.notif-img {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+}
+
+.notif-img img {
+  height: 300px;
+  width: 300px;
+}
+
 /* SignUp Button CSS */
-.signUp-btn {
+/* .signUp-btn {
   display: flex;
   align-items: center;
   justify-content: right;
@@ -431,35 +508,7 @@ body {
 }
 .no-textdeco {
   text-decoration: none;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+} */
 
 /*Phone*/
 @media only screen and (max-width: 767px) {
@@ -477,7 +526,9 @@ body {
     width: calc(100% - 40px);
     padding: 20px;
   }
-
+  .card-body .btn1 {
+    gap: 10px;
+  }
   .card-body .txt-left h1 {
     font-size: 1em;
   }
@@ -486,6 +537,7 @@ body {
     font-size: 0.7em;
     word-wrap: break-word;
     max-width: 100px;
+    line-height: 13px;
   }
 
   .card-body .txt-right,
@@ -493,11 +545,6 @@ body {
     width: 100px;
     font-size: 0.8em;
     height: 15px;
-  }
-
-  .card-body .btn2 button {
-    width: 100px;
-    font-size: 0.7em;
   }
 
   .card-body .btn3 button {
@@ -521,7 +568,7 @@ body {
   .txt-title-1 h1 {
     font-size: clamp(1rem, 0.3043rem + 3.4783vw, 1rem);
     line-height: 50px;
-    margin-bottom: -20px; 
+    margin-bottom: -20px;
   }
   .txt-title-1 p {
     line-height: 20px;
@@ -547,7 +594,7 @@ body {
   .container {
     width: 100%;
   }
-    /* SignUp Button CSS */
+  /* SignUp Button CSS */
   .signUp-btn button {
     font-size: clamp(15px, 8vw, 15px);
   }

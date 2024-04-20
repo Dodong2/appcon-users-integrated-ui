@@ -4,6 +4,8 @@ import "bootstrap/dist/css/bootstrap.css";
 import Host from "../images/Host.png";
 import Loc from "../images/loc.svg";
 import bell from "../images/bell.svg";
+import phone from "../images/phone-call.svg";
+import { Link } from 'react-router-dom'
 
 const Hospitals = () => {
   useEffect(() => {
@@ -34,12 +36,18 @@ const Hospitals = () => {
           </div>
           <div className="card-body">
             <div className="btn1">
-              <button>
-                <img src={Loc} />
-              </button>
-            </div>
-            <div className="btn2">
-              <button>Call Ambulance</button>
+              <div>
+                <button>
+                  <img src={Loc} />
+                </button>
+              </div>
+              <div className="btn-2">
+              <Link to='/Notif'>
+                <button>
+                  <img src={phone}></img>
+                </button>
+                </Link>
+              </div>
             </div>
             <div className="btn3">
               <button>
@@ -56,8 +64,8 @@ const Hospitals = () => {
           <img src={Host} className="card-img-top" alt="..." />
           <div className="card-body">
             <div className="txt-left">
-              <h1>Hostpital 2</h1>
-              <p>8817 National Hwy, Los Baños, Laguna</p>
+              <h1>Hostpital 1</h1>
+              <p>CMC, Real, Calamba, 4027 Laguna</p>
             </div>
             <div className="txt-right">
               <p>
@@ -67,16 +75,20 @@ const Hospitals = () => {
           </div>
           <div className="card-body">
             <div className="btn1">
-              <button>
-                <img src={Loc} />
-              </button>
-            </div>
-            <div className="btn2">
-              <button>Call Ambulance</button>
+              <div>
+                <button>
+                  <img src={Loc} />
+                </button>
+              </div>
+              <div className="btn-2">
+                <button>
+                  <img src={phone}></img>
+                </button>
+              </div>
             </div>
             <div className="btn3">
               <button>
-                <img src={bell}/>
+                <img src={bell} />
                 <p>Emergency</p>
               </button>
             </div>
@@ -89,7 +101,7 @@ const Hospitals = () => {
           <img src={Host} className="card-img-top" alt="..." />
           <div className="card-body">
             <div className="txt-left">
-              <h1>Hostpital 3</h1>
+              <h1>Hostpital 1</h1>
               <p>CMC, Real, Calamba, 4027 Laguna</p>
             </div>
             <div className="txt-right">
@@ -100,23 +112,27 @@ const Hospitals = () => {
           </div>
           <div className="card-body">
             <div className="btn1">
-              <button>
-                <img src={Loc} />
-              </button>
-            </div>
-            <div className="btn2">
-              <button>Call Ambulance</button>
+              <div>
+                <button>
+                  <img src={Loc} />
+                </button>
+              </div>
+              <div className="btn-2">
+                <button>
+                  <img src={phone}></img>
+                </button>
+              </div>
             </div>
             <div className="btn3">
               <button>
-                <img src={bell}/>
+                <img src={bell} />
                 <p>Emergency</p>
               </button>
             </div>
           </div>
         </div>
       </div>
-      </>
+    </>
   );
 };
 
