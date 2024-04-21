@@ -47,16 +47,16 @@ const Home = () => {
           {/* if modal is open magpapakita to once na ma-click si button na find nearest.....*/}
           <div className="center-contents">
             <div className="main-layers">
-              <img src={location} alt="logo" className="location-logo"/>
-              <img src={layer1}/>
-              <img src={layer2}/>
-              <img src={layer3}/>
-              <img src={layer4}/>
+              <img src={location} alt="logo" className="location-logo" />
+              <img src={layer1} />
+              <img src={layer2} />
+              <img src={layer3} />
+              <img src={layer4} />
             </div>
           </div>
           <div className="txt-title-1">
             <h1>Access your location</h1>
-            <p>We need your permission to <br/><span>access your location.</span> </p>
+            <p>We need your permission to <br /><span>access your location.</span> </p>
           </div>
           <div className="btn">
             <button
@@ -88,7 +88,7 @@ const Home = () => {
             {/*<p>Caring for life’s greatest treasure: health.</p>*/}
           </div>
           <div className="btn">
-            <button onClick={tggleModal} type="button" style={{border: 'none'}}>
+            <button onClick={tggleModal} type="button" style={{ border: 'none' }}>
               Find Nearest Hospital
             </button>
           </div>

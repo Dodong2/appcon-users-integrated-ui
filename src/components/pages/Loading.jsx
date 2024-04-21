@@ -8,29 +8,29 @@ import loading4 from '../images/load4-layer.svg'
 function App() {
 
   /*Timer*/
- const [isLoading, setLoading] = useState(true)
- useEffect(() => {
-  const timer = setTimeout(() => {
-    setLoading(false)
-  }, 500)
+  const [isLoading, setLoading] = useState(true)
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false)
+    }, 500)
 
 
-  return () => clearTimeout(timer)
- }, [])
+    return () => clearTimeout(timer)
+  }, [])
 
   return (
     <>
-{/* Loading Page */}
+      {/* Loading Page */}
       <div className={`loading-container ${isLoading ? 'visible' : 'hidden'}`}>
         <div className={`first-page ${isLoading ? 'visible' : 'hidden'}`}>
           <div className="loading-logo">
             {/*LOGO*/}
             <div className='layers-logo'>
-            <img src={logo} alt='logo'/>
-            <img src={loading1}/>
-            <img src={loading2}/>
-            <img src={loading3}/>
-            <img src={loading4}/>
+              <img src={logo} alt='logo' />
+              <img src={loading1} />
+              <img src={loading2} />
+              <img src={loading3} />
+              <img src={loading4} />
             </div>
           </div>
         </div>

@@ -736,36 +736,6 @@ body {
   font-family: Poppins;
   color: var(--white);
 }
-/* SignUp Button CSS */
-/* .signUp-btn {
-  display: flex;
-  align-items: center;
-  justify-content: right;
-  position: relative;
-  padding-top: 50px;
-}
-.signUp-btn button {
-  font-family: Poppins;
-  border-radius: 20px;
-  border: none;
-  background: var(--card-bg);
-  font-size: clamp(22px, 8vw, 22px);
-  color: var(--white);
-  width: 150px;
-  padding: 5px;
-  display: flex; 
-  align-items: center; 
-  justify-content: center; 
-}
-.signUp-btn button img {
-  margin-right: 5px;
-}
-.signUp-btn button span {
-  margin-left: 5px;
-}
-.no-textdeco {
-  text-decoration: none;
-} */
 
 /*Phone*/
 @media only screen and (max-width: 767px) {
@@ -835,21 +805,6 @@ body {
   .serv {
     width: calc(100% - 40px);
   }
-
-  /* SignUp Button CSS */
-  /* .signUp-btn {
-    padding-top: 0;
-  }
-  .signUp-btn button {
-    font-size: clamp(15px, 8vw, 15px);
-    width: 120px;
-  }
-  .signUp-btn button span img {
-  width: 26px;
-  height: 26px;
-  flex-shrink: 0;
-  margin-right: 5px;
-  } */
 
   /* Notification */
   .pulse {
