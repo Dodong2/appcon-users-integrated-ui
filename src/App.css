@@ -13,8 +13,12 @@
   --card-bg: #142629;
   --card-btn2-bg: #71ff90;
   --card-btn3-red: #ff4848;
-  --txt-color-op1: #0038FF;
-  --hostpital-bg-color: linear-gradient(90deg, #000 6.09%, rgba(0, 0, 0, 0.00) 68.29%);
+  --txt-color-op1: #0038ff;
+  --hostpital-bg-color: linear-gradient(
+    90deg,
+    #000 6.09%,
+    rgba(0, 0, 0, 0) 68.29%
+  );
 }
 
 /* Font */
@@ -553,21 +557,16 @@ body {
 
 /* Services */
 .serv-container {
-  width: 1140px;
-  margin: 0 auto;
-  height: 160vh;
+  height: 140vh;
   width: 100%;
   background: rgba(0, 0, 0, 0.2);
   box-shadow: 2px 9px 65px 0px rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(50px);
 }
-/* .serv {
-  height: 100vh;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.2);
-  box-shadow: 2px 9px 65px 0px rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(50px);
-} */
+.serv {
+  width: 1140px;
+  margin: 0 auto;
+}
 
 .serv-cont {
   padding-left: 50px;
@@ -624,11 +623,11 @@ body {
 
 /* equip left */
 .serv-offer .equip .equip-bg {
-  height:100%;
+  height: 100%;
   width: 50%;
-  background-image: linear-gradient(90deg, #000 6.09%, rgba(0, 0, 0, 0.00));
+  background-image: linear-gradient(90deg, #000 6.09%, rgba(0, 0, 0, 0));
   position: absolute;
-  left:0;
+  left: 0;
   top: 0;
   padding: 30px;
 }
@@ -636,7 +635,7 @@ body {
 .serv-offer .equip img {
   height: 100%;
   width: 100%;
-  object-fit: cover;  
+  object-fit: cover;
   display: block;
 }
 
@@ -658,21 +657,20 @@ body {
   color: var(--white);
 }
 
-
 /* doctors right */
 .serv-offer .doc .doc-bg {
-  height:100%;
+  height: 100%;
   width: 50%;
-  background-image: linear-gradient(90deg, #000 6.09%, rgba(0, 0, 0, 0.00));
+  background-image: linear-gradient(90deg, #000 6.09%, rgba(0, 0, 0, 0));
   position: absolute;
-  right:0;
+  right: 0;
   top: 0;
   padding: 30px;
 }
 .serv-offer .doc img {
   height: 100%;
   width: 100%;
-  object-fit: contain;  
+  object-fit: contain;
   display: block;
   right: 0;
 }
@@ -687,18 +685,18 @@ body {
 }
 /* beds left */
 .serv-offer .beds .beds-bg {
-  height:100%;
+  height: 100%;
   width: 100%;
-  background-image: linear-gradient(90deg, #000 6.09%, rgba(0, 0, 0, 0.00));
+  background-image: linear-gradient(90deg, #000 6.09%, rgba(0, 0, 0, 0));
   position: absolute;
-  left:0;
+  left: 0;
   top: 0;
   padding: 30px;
 }
 .serv-offer .beds img {
   height: 100%;
   width: 101%;
-  object-fit: contain;  
+  object-fit: contain;
   display: block;
   right: 0;
 }
@@ -713,18 +711,18 @@ body {
 }
 /* rooms right */
 .serv-offer .rooms .rooms-bg {
-  height:100%;
+  height: 100%;
   width: 50%;
-  background-image: linear-gradient(90deg, #000 6.09%, rgba(0, 0, 0, 0.00));
+  background-image: linear-gradient(90deg, #000 6.09%, rgba(0, 0, 0, 0));
   position: absolute;
-  right:0;
+  right: 0;
   top: 0;
   padding: 30px;
 }
 .serv-offer .rooms img {
   height: 100%;
   width: 100%;
-  object-fit: contain;  
+  object-fit: contain;
   display: block;
   right: 0;
 }
@@ -831,31 +829,11 @@ body {
   .txt-title-1 p {
     line-height: 20px;
   }
-  
+
   /* Services */
-  .serv-container {
+  .serv {
     width: calc(100% - 40px);
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   /* SignUp Button CSS */
   /* .signUp-btn {
@@ -888,7 +866,6 @@ body {
   .txt-notif p {
     font-size: clamp(12px, 4vw, 12px);
   }
-  
 
   .txt-notif .btn button {
     width: 229px;
