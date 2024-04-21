@@ -9,9 +9,12 @@
 
 :root {
   --white: #ffffff;
+  --black: #000;
   --card-bg: #142629;
   --card-btn2-bg: #71ff90;
   --card-btn3-red: #ff4848;
+  --txt-color-op1: #0038FF;
+  --hostpital-bg-color: linear-gradient(90deg, #000 6.09%, rgba(0, 0, 0, 0.00) 68.29%);
 }
 
 /* Font */
@@ -149,6 +152,7 @@ body {
   width: 269px;
   font-family: "Poppins";
   font-size: 15px;
+  font-weight: 900;
   color: white;
   cursor: pointer;
   margin: 20px;
@@ -415,7 +419,6 @@ body {
 
 /* Notification */
 .notif {
-  position: fixed;
   height: 100vh;
   width: 100%;
   background: rgba(0, 0, 0, 0.2);
@@ -425,6 +428,7 @@ body {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  overflow: hidden;
 }
 
 .notif-cont {
@@ -478,7 +482,261 @@ body {
   height: 300px;
   width: 300px;
 }
+.txt-notif {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 35%);
+}
+.txt-notif h1 {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: clamp(32px, 4vw, 40px);
+  color: var(--white);
+  letter-spacing: 2px;
+}
+.txt-notif p {
+  font-family: Poppins;
+  color: var(--white);
+  line-height: 5px;
+  font-size: clamp(12px, 4vw, 16px);
+}
 
+.txt-notif .btn {
+  border: 0 !important;
+}
+
+.txt-notif .btn button {
+  width: 269px;
+  font-family: "Poppins";
+  font-size: 15px;
+  font-weight: 900;
+  color: white;
+  cursor: pointer;
+  margin: 20px;
+  text-align: center;
+  padding: 14px 10px;
+  gap: 10px;
+  border: none !important;
+  border-radius: 50px;
+  background: linear-gradient(to right, #0038ff, #00d1ff, #0038ff, #00d1ff);
+  background-size: 300% 100%;
+  transition: background-position 0.4s ease-in-out, box-shadow 0.4s ease-in-out,
+    color 0.4s ease-in-out;
+  animation: shadow-color 5s linear infinite;
+}
+
+.txt-notif .btn button:hover {
+  background-position: 100% 0;
+  box-shadow: 0 4px 15px rgba(0, 56, 255, 0.75);
+  color: white;
+}
+
+/* Animation for box-shadow of button */
+@keyframes shadow-color {
+  0% {
+    box-shadow: 0 4px 15px 0 rgba(0, 56, 255, 0);
+  }
+
+  50% {
+    box-shadow: 0 0 25px 0 rgba(46, 189, 255, 0.9);
+  }
+
+  100% {
+    box-shadow: 0 4px 15px 0 rgba(0, 56, 255, 0);
+  }
+}
+
+/* Services */
+.serv-container {
+  width: 1140px;
+  margin: 0 auto;
+  height: 160vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 9px 65px 0px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(50px);
+}
+/* .serv {
+  height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 9px 65px 0px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(50px);
+} */
+
+.serv-cont {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.serv-cont nav {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+}
+.tag-name {
+  padding-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.tag-name h1 {
+  font-family: Poppins-ExtraBold;
+  font-size: clamp(24px, 4vw, 24px);
+  color: var(--txt-color-op1);
+  line-height: 1.5px;
+}
+.tag-name p {
+  font-family: Poppins;
+  color: var(--white);
+  font-size: clamp(12px, 4vw, 12px);
+}
+.serv-txt {
+  padding-top: 60px;
+}
+.serv-txt h1 {
+  font-family: Poppins-ExtraBold;
+  font-size: clamp(50px, 4vw, 50px);
+  color: var(--txt-color-op1);
+  line-height: 30px;
+}
+.serv-txt p {
+  line-height: 20px;
+  font-family: Poppins;
+  color: var(--white);
+  font-size: clamp(14px, 4vw, 14px);
+}
+.serv-offer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  position: relative;
+  left: 0;
+  top: 0;
+}
+
+/* equip left */
+.serv-offer .equip .equip-bg {
+  height:100%;
+  width: 50%;
+  background-image: linear-gradient(90deg, #000 6.09%, rgba(0, 0, 0, 0.00));
+  position: absolute;
+  left:0;
+  top: 0;
+  padding: 30px;
+}
+
+.serv-offer .equip img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;  
+  display: block;
+}
+
+.elem1 {
+  background: var(--white);
+  width: 100px;
+  text-align: center;
+  font-family: Poppins-ExtraBold;
+  border-radius: 5px;
+}
+
+.serv-offer .equip h1 {
+  font-family: Poppins-ExtraBold;
+  color: var(--white);
+  font-size: clamp(30px, 4vw, 30px);
+}
+.serv-offer .equip p {
+  font-family: Poppins;
+  color: var(--white);
+}
+
+
+/* doctors right */
+.serv-offer .doc .doc-bg {
+  height:100%;
+  width: 50%;
+  background-image: linear-gradient(90deg, #000 6.09%, rgba(0, 0, 0, 0.00));
+  position: absolute;
+  right:0;
+  top: 0;
+  padding: 30px;
+}
+.serv-offer .doc img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;  
+  display: block;
+  right: 0;
+}
+.serv-offer .doc h1 {
+  font-family: Poppins-ExtraBold;
+  color: var(--white);
+  font-size: clamp(30px, 4vw, 30px);
+}
+.serv-offer .doc p {
+  font-family: Poppins;
+  color: var(--white);
+}
+/* beds left */
+.serv-offer .beds .beds-bg {
+  height:100%;
+  width: 100%;
+  background-image: linear-gradient(90deg, #000 6.09%, rgba(0, 0, 0, 0.00));
+  position: absolute;
+  left:0;
+  top: 0;
+  padding: 30px;
+}
+.serv-offer .beds img {
+  height: 100%;
+  width: 101%;
+  object-fit: contain;  
+  display: block;
+  right: 0;
+}
+.serv-offer .beds h1 {
+  font-family: Poppins-ExtraBold;
+  color: var(--white);
+  font-size: clamp(30px, 4vw, 30px);
+}
+.serv-offer .beds p {
+  font-family: Poppins;
+  color: var(--white);
+}
+/* rooms right */
+.serv-offer .rooms .rooms-bg {
+  height:100%;
+  width: 50%;
+  background-image: linear-gradient(90deg, #000 6.09%, rgba(0, 0, 0, 0.00));
+  position: absolute;
+  right:0;
+  top: 0;
+  padding: 30px;
+}
+.serv-offer .rooms img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;  
+  display: block;
+  right: 0;
+}
+.serv-offer .rooms h1 {
+  font-family: Poppins-ExtraBold;
+  color: var(--white);
+  font-size: clamp(30px, 4vw, 30px);
+}
+.serv-offer .rooms p {
+  font-family: Poppins;
+  color: var(--white);
+}
 /* SignUp Button CSS */
 /* .signUp-btn {
   display: flex;
@@ -573,6 +831,32 @@ body {
   .txt-title-1 p {
     line-height: 20px;
   }
+  
+  /* Services */
+  .serv-container {
+    width: calc(100% - 40px);
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   /* SignUp Button CSS */
   /* .signUp-btn {
     padding-top: 0;
@@ -587,6 +871,28 @@ body {
   flex-shrink: 0;
   margin-right: 5px;
   } */
+
+  /* Notification */
+  .pulse {
+    width: 200px;
+    height: 200px;
+  }
+
+  .notif-img img {
+    height: 200px;
+    width: 200px;
+  }
+  .txt-notif {
+    transform: translate(-50%, 25%);
+  }
+  .txt-notif p {
+    font-size: clamp(12px, 4vw, 12px);
+  }
+  
+
+  .txt-notif .btn button {
+    width: 229px;
+  }
 }
 
 /*Tablet*/

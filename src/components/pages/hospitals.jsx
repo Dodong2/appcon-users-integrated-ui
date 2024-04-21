@@ -42,10 +42,10 @@ const Hospitals = () => {
                 </button>
               </div>
               <div className="btn-2">
-              <Link to='/Notif'>
-                <button>
-                  <img src={phone}></img>
-                </button>
+                <Link to='/Notif'>
+                  <button>
+                    <img src={phone}></img>
+                  </button>
                 </Link>
               </div>
             </div>
@@ -81,9 +81,11 @@ const Hospitals = () => {
                 </button>
               </div>
               <div className="btn-2">
-                <button>
-                  <img src={phone}></img>
-                </button>
+                <Link to='/Notif'>
+                  <button>
+                    <img src={phone}></img>
+                  </button>
+                </Link>
               </div>
             </div>
             <div className="btn3">
@@ -118,9 +120,11 @@ const Hospitals = () => {
                 </button>
               </div>
               <div className="btn-2">
-                <button>
-                  <img src={phone}></img>
-                </button>
+                <Link to='/Notif'>
+                  <button>
+                    <img src={phone}></img>
+                  </button>
+                </Link>
               </div>
             </div>
             <div className="btn3">
