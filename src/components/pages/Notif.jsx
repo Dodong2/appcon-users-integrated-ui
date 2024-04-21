@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import bell from '../images/notif-bell.svg'
 
 
@@ -12,7 +13,17 @@ const Notif = () => {
           <span style={{ '--i': 3 }}></span>
         </div>
         <div className="notif-img">
-        <img src={bell}/>
+          <img src={bell} />
+        </div>
+      </div>
+      <div className='txt-notif'>
+        <h1>Get Notified!</h1>
+        <p>Your Emergency notification has been received,</p>
+        <p>and our staff are en route to assist you.</p>
+        <div className="btn">
+        <Link to='/Services'>
+          <button>Continue</button>
+          </Link>
         </div>
       </div>
     </div>
