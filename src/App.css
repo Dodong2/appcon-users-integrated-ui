@@ -828,11 +828,11 @@ body {
 
   /* Services */
   .serv-container {
-    height: 150vh;
+    height: 155vh;
     width: 100%;
   }
   .serv {
-    width: calc(100% - 40px);
+    width: calc(100% - 10px);
   }
 
   .serv-cont {
@@ -916,42 +916,7 @@ body {
     width: 50px;
     font-size: clamp(10px, 4vw, 10px);
   }
-  /* doctors right */
-  .serv-offer .doc .doc-bg {
-    padding: 10px;
-    left: 0;
-  }
-  .serv-offer .doc img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    display: block;
-    right: 0;
-  }
 
-  /* beds left */
-  .serv-offer .beds .beds-bg {
-    padding: 10px;
-  }
-  .serv-offer .beds img {
-    height: 100%;
-    width: 101%;
-    object-fit: contain;
-    display: block;
-    right: 0;
-  }
-  /* rooms right */
-  .serv-offer .rooms .rooms-bg {
-    left: 0;
-    padding: 10px;
-  }
-  .serv-offer .rooms img {
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
-    display: block;
-    right: 0;
-  }
 }
 
 /*Tablet*/
