@@ -21,8 +21,8 @@ const Notif = () => {
         <p>Your Emergency notification has been received,</p>
         <p>and our staff are en route to assist you.</p>
         <div className="btn">
-        <Link to='/Services'>
-          <button>Continue</button>
+          <Link to='/Services'>
+            <button>Continue</button>
           </Link>
         </div>
       </div>

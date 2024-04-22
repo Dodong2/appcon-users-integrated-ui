@@ -13,8 +13,12 @@
   --card-bg: #142629;
   --card-btn2-bg: #71ff90;
   --card-btn3-red: #ff4848;
-  --txt-color-op1: #0038FF;
-  --hostpital-bg-color: linear-gradient(90deg, #000 6.09%, rgba(0, 0, 0, 0.00) 68.29%);
+  --txt-color-op1: #0038ff;
+  --hostpital-bg-color: linear-gradient(
+    90deg,
+    #000 6.09%,
+    rgba(0, 0, 0, 0) 68.29%
+  );
 }
 
 /* Font */
@@ -553,21 +557,16 @@ body {
 
 /* Services */
 .serv-container {
-  width: 1140px;
-  margin: 0 auto;
-  height: 160vh;
+  height: 140vh;
   width: 100%;
   background: rgba(0, 0, 0, 0.2);
   box-shadow: 2px 9px 65px 0px rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(50px);
 }
-/* .serv {
-  height: 100vh;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.2);
-  box-shadow: 2px 9px 65px 0px rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(50px);
-} */
+.serv {
+  width: 1140px;
+  margin: 0 auto;
+}
 
 .serv-cont {
   padding-left: 50px;
@@ -579,6 +578,7 @@ body {
   align-items: center;
   gap: 10px;
 }
+
 .tag-name {
   padding-top: 25px;
   display: flex;
@@ -624,11 +624,11 @@ body {
 
 /* equip left */
 .serv-offer .equip .equip-bg {
-  height:100%;
+  height: 100%;
   width: 50%;
-  background-image: linear-gradient(90deg, #000 6.09%, rgba(0, 0, 0, 0.00));
+  background-image: linear-gradient(90deg, #000 6.09%, rgba(0, 0, 0, 0));
   position: absolute;
-  left:0;
+  left: 0;
   top: 0;
   padding: 30px;
 }
@@ -636,7 +636,7 @@ body {
 .serv-offer .equip img {
   height: 100%;
   width: 100%;
-  object-fit: cover;  
+  object-fit: cover;
   display: block;
 }
 
@@ -652,27 +652,27 @@ body {
   font-family: Poppins-ExtraBold;
   color: var(--white);
   font-size: clamp(30px, 4vw, 30px);
+  margin-top: 20px;
 }
 .serv-offer .equip p {
   font-family: Poppins;
   color: var(--white);
 }
 
-
 /* doctors right */
 .serv-offer .doc .doc-bg {
-  height:100%;
+  height: 100%;
   width: 50%;
-  background-image: linear-gradient(90deg, #000 6.09%, rgba(0, 0, 0, 0.00));
+  background-image: linear-gradient(90deg, #000 6.09%, rgba(0, 0, 0, 0));
   position: absolute;
-  right:0;
+  right: 0;
   top: 0;
   padding: 30px;
 }
 .serv-offer .doc img {
   height: 100%;
   width: 100%;
-  object-fit: contain;  
+  object-fit: contain;
   display: block;
   right: 0;
 }
@@ -680,6 +680,7 @@ body {
   font-family: Poppins-ExtraBold;
   color: var(--white);
   font-size: clamp(30px, 4vw, 30px);
+  margin-top: 20px;
 }
 .serv-offer .doc p {
   font-family: Poppins;
@@ -687,18 +688,18 @@ body {
 }
 /* beds left */
 .serv-offer .beds .beds-bg {
-  height:100%;
+  height: 100%;
   width: 100%;
-  background-image: linear-gradient(90deg, #000 6.09%, rgba(0, 0, 0, 0.00));
+  background-image: linear-gradient(90deg, #000 6.09%, rgba(0, 0, 0, 0));
   position: absolute;
-  left:0;
+  left: 0;
   top: 0;
   padding: 30px;
 }
 .serv-offer .beds img {
   height: 100%;
   width: 101%;
-  object-fit: contain;  
+  object-fit: contain;
   display: block;
   right: 0;
 }
@@ -706,6 +707,7 @@ body {
   font-family: Poppins-ExtraBold;
   color: var(--white);
   font-size: clamp(30px, 4vw, 30px);
+  margin-top: 20px;
 }
 .serv-offer .beds p {
   font-family: Poppins;
@@ -713,18 +715,18 @@ body {
 }
 /* rooms right */
 .serv-offer .rooms .rooms-bg {
-  height:100%;
+  height: 100%;
   width: 50%;
-  background-image: linear-gradient(90deg, #000 6.09%, rgba(0, 0, 0, 0.00));
+  background-image: linear-gradient(90deg, #000 6.09%, rgba(0, 0, 0, 0));
   position: absolute;
-  right:0;
+  right: 0;
   top: 0;
   padding: 30px;
 }
 .serv-offer .rooms img {
   height: 100%;
   width: 100%;
-  object-fit: contain;  
+  object-fit: contain;
   display: block;
   right: 0;
 }
@@ -732,41 +734,12 @@ body {
   font-family: Poppins-ExtraBold;
   color: var(--white);
   font-size: clamp(30px, 4vw, 30px);
+  margin-top: 20px;
 }
 .serv-offer .rooms p {
   font-family: Poppins;
   color: var(--white);
 }
-/* SignUp Button CSS */
-/* .signUp-btn {
-  display: flex;
-  align-items: center;
-  justify-content: right;
-  position: relative;
-  padding-top: 50px;
-}
-.signUp-btn button {
-  font-family: Poppins;
-  border-radius: 20px;
-  border: none;
-  background: var(--card-bg);
-  font-size: clamp(22px, 8vw, 22px);
-  color: var(--white);
-  width: 150px;
-  padding: 5px;
-  display: flex; 
-  align-items: center; 
-  justify-content: center; 
-}
-.signUp-btn button img {
-  margin-right: 5px;
-}
-.signUp-btn button span {
-  margin-left: 5px;
-}
-.no-textdeco {
-  text-decoration: none;
-} */
 
 /*Phone*/
 @media only screen and (max-width: 767px) {
@@ -831,46 +804,6 @@ body {
   .txt-title-1 p {
     line-height: 20px;
   }
-  
-  /* Services */
-  .serv-container {
-    width: calc(100% - 40px);
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  /* SignUp Button CSS */
-  /* .signUp-btn {
-    padding-top: 0;
-  }
-  .signUp-btn button {
-    font-size: clamp(15px, 8vw, 15px);
-    width: 120px;
-  }
-  .signUp-btn button span img {
-  width: 26px;
-  height: 26px;
-  flex-shrink: 0;
-  margin-right: 5px;
-  } */
 
   /* Notification */
   .pulse {
@@ -888,10 +821,136 @@ body {
   .txt-notif p {
     font-size: clamp(12px, 4vw, 12px);
   }
-  
 
   .txt-notif .btn button {
     width: 229px;
+  }
+
+  /* Services */
+  .serv-container {
+    height: 150vh;
+    width: 100%;
+  }
+  .serv {
+    width: calc(100% - 40px);
+  }
+
+  .serv-cont {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .serv-cont nav {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .tag-name {
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .tag-name h1 {
+    font-size: clamp(20px, 4vw, 20px);
+  }
+  .tag-name p {
+    font-size: clamp(10px, 4vw, 10px);
+  }
+  .serv-txt {
+    padding-top: 60px;
+  }
+  .serv-txt h1 {
+    font-size: clamp(1.3em, 4vw, 1.3em);
+    line-height: 10px;
+  }
+  .serv-txt p {
+    font-size: clamp(10px, 4vw, 10px);
+    text-align: justify;
+  }
+  .serv-offer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    position: relative;
+    left: 0;
+    top: 0;
+  }
+  .equip,
+  .doc,
+  .beds,
+  .rooms {
+    position: inherit;
+  }
+  .serv-offer .equip h1,
+  .serv-offer .doc h1,
+  .serv-offer .beds h1,
+  .serv-offer .rooms h1 {
+    font-size: clamp(13px, 4vw, 13px);
+    margin-top: 10px;
+  }
+
+  .serv-offer .equip p,
+  .serv-offer .doc p,
+  .serv-offer .beds p,
+  .serv-offer .rooms p {
+    font-size: clamp(7px, 4vw, 7px);
+    text-align: left;
+  }
+  .serv-offer .equip .equip-bg,
+  .serv-offer .doc .doc-bg,
+  .serv-offer .beds .beds-bg,
+  .serv-offer .rooms .rooms-bg {
+    padding: 15px;
+    width: 100%;
+  }
+  .serv-offer .equip img {
+    object-fit: contain;
+  }
+
+  .elem1 {
+    width: 50px;
+    font-size: clamp(10px, 4vw, 10px);
+  }
+  /* doctors right */
+  .serv-offer .doc .doc-bg {
+    padding: 10px;
+    left: 0;
+  }
+  .serv-offer .doc img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    right: 0;
+  }
+
+  /* beds left */
+  .serv-offer .beds .beds-bg {
+    padding: 10px;
+  }
+  .serv-offer .beds img {
+    height: 100%;
+    width: 101%;
+    object-fit: contain;
+    display: block;
+    right: 0;
+  }
+  /* rooms right */
+  .serv-offer .rooms .rooms-bg {
+    left: 0;
+    padding: 10px;
+  }
+  .serv-offer .rooms img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    display: block;
+    right: 0;
   }
 }
 
