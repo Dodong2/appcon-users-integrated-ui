@@ -652,6 +652,7 @@ body {
   font-family: Poppins-ExtraBold;
   color: var(--white);
   font-size: clamp(30px, 4vw, 30px);
+  margin-top: 20px;
 }
 .serv-offer .equip p {
   font-family: Poppins;
@@ -679,6 +680,7 @@ body {
   font-family: Poppins-ExtraBold;
   color: var(--white);
   font-size: clamp(30px, 4vw, 30px);
+  margin-top: 20px;
 }
 .serv-offer .doc p {
   font-family: Poppins;
@@ -705,6 +707,7 @@ body {
   font-family: Poppins-ExtraBold;
   color: var(--white);
   font-size: clamp(30px, 4vw, 30px);
+  margin-top: 20px;
 }
 .serv-offer .beds p {
   font-family: Poppins;
@@ -731,6 +734,7 @@ body {
   font-family: Poppins-ExtraBold;
   color: var(--white);
   font-size: clamp(30px, 4vw, 30px);
+  margin-top: 20px;
 }
 .serv-offer .rooms p {
   font-family: Poppins;
@@ -801,11 +805,6 @@ body {
     line-height: 20px;
   }
 
-  /* Services */
-  .serv {
-    width: calc(100% - 40px);
-  }
-
   /* Notification */
   .pulse {
     width: 200px;
@@ -825,6 +824,133 @@ body {
 
   .txt-notif .btn button {
     width: 229px;
+  }
+
+  /* Services */
+  .serv-container {
+    height: 150vh;
+    width: 100%;
+  }
+  .serv {
+    width: calc(100% - 40px);
+  }
+
+  .serv-cont {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .serv-cont nav {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .tag-name {
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .tag-name h1 {
+    font-size: clamp(20px, 4vw, 20px);
+  }
+  .tag-name p {
+    font-size: clamp(10px, 4vw, 10px);
+  }
+  .serv-txt {
+    padding-top: 60px;
+  }
+  .serv-txt h1 {
+    font-size: clamp(1.3em, 4vw, 1.3em);
+    line-height: 10px;
+  }
+  .serv-txt p {
+    font-size: clamp(10px, 4vw, 10px);
+    text-align: justify;
+  }
+  .serv-offer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    position: relative;
+    left: 0;
+    top: 0;
+  }
+  .equip,
+  .doc,
+  .beds,
+  .rooms {
+    position: inherit;
+  }
+  .serv-offer .equip h1,
+  .serv-offer .doc h1,
+  .serv-offer .beds h1,
+  .serv-offer .rooms h1 {
+    font-size: clamp(13px, 4vw, 13px);
+    margin-top: 10px;
+  }
+
+  .serv-offer .equip p,
+  .serv-offer .doc p,
+  .serv-offer .beds p,
+  .serv-offer .rooms p {
+    font-size: clamp(7px, 4vw, 7px);
+    text-align: left;
+  }
+  .serv-offer .equip .equip-bg,
+  .serv-offer .doc .doc-bg,
+  .serv-offer .beds .beds-bg,
+  .serv-offer .rooms .rooms-bg {
+    padding: 15px;
+    width: 100%;
+  }
+  .serv-offer .equip img {
+    object-fit: contain;
+  }
+
+  .elem1 {
+    width: 50px;
+    font-size: clamp(10px, 4vw, 10px);
+  }
+  /* doctors right */
+  .serv-offer .doc .doc-bg {
+    padding: 10px;
+    left: 0;
+  }
+  .serv-offer .doc img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    right: 0;
+  }
+
+  /* beds left */
+  .serv-offer .beds .beds-bg {
+    padding: 10px;
+  }
+  .serv-offer .beds img {
+    height: 100%;
+    width: 101%;
+    object-fit: contain;
+    display: block;
+    right: 0;
+  }
+  /* rooms right */
+  .serv-offer .rooms .rooms-bg {
+    left: 0;
+    padding: 10px;
+  }
+  .serv-offer .rooms img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    display: block;
+    right: 0;
   }
 }
 

@@ -28,7 +28,7 @@ const Services = () => {
               {/* Equipments */}
               <div className='equip'>
                 <div className="equip-bg">
-                  <div className='elem1'>Services</div><br />
+                  <div className='elem1'>Services</div>
                   <h1>Equipments</h1>
                   <p>Your emergency notification has been received,<br /><span>and our staff are en route to assist you.</span>
                   </p>
@@ -38,7 +38,7 @@ const Services = () => {
               {/* Doctors */}
               <div className="doc">
                 <div className='doc-bg'>
-                  <div className='elem1'>Services</div><br />
+                  <div className='elem1'>Services</div>
                   <h1>Doctors</h1>
                   <p>Your emergency notification has been received,<br /><span>and our staff are en route to assist you.</span>
                   </p>
@@ -50,7 +50,7 @@ const Services = () => {
               {/* Beds */}
               <div className='beds'>
                 <div className='beds-bg'>
-                  <div className='elem1'>Services</div><br />
+                  <div className='elem1'>Services</div>
                   <h1>Beds</h1>
                   <p>Your emergency notification has been received,<br /><span>and our staff are en route to assist you.</span>
                   </p>
@@ -60,7 +60,7 @@ const Services = () => {
               {/* Rooms */}
               <div className="rooms">
                 <div className='rooms-bg'>
-                  <div className='elem1'>Services</div><br />
+                  <div className='elem1'>Services</div>
                   <h1>Rooms</h1>
                   <p>Your emergency notification has been received,<br /><span>and our staff are en route to assist you.</span>
                   </p>
