@@ -79,6 +79,7 @@ const Hospitals = () => {
               </div>
             </div>
             <div className="card-body">
+            <div className="btn-content">
               <div className="btn1">
                 <div>
                   <button onClick={() => openMap(hospital.latitude, hospital.longitude)}>
@@ -98,6 +99,7 @@ const Hospitals = () => {
                   <img src={bell} alt="bell" />
                   <p>Emergency</p>
                 </button>
+              </div>
               </div>
             </div>
           </div>
